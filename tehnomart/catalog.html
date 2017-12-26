@@ -72,44 +72,54 @@
 			</div>
 				<div class="catalog-columns">
 					<aside class="filtr">
-						<form class="fitr-form" action="https///" method="post">
-							<b>Фильтр:</b>
-							<div class="filtr-price">
-								<label for="price-results"><b>Цена:</b></label>
+						<form class="filtr-form" action="https///" method="post">
+							<div class="filtr-title"><b>Фильтр:</b></div>
+							
+							<div class="filtr-item">
+								<b>Цена:</b>
 								<input id="price-results" type="text">
+								<div class=""></div>
 							</div>
-							<div class="manufactures-filtr">
+
+							<div class="filtr-item">
 									<b>Производители:</b>
-								<label>
+								<label class="filtr-unit-manufactures">
 									<input type="checkbox" value="Bosch" name="Bosch">
+									<span class="checkbox-indicator"></span>
 									Bosch
 								</label>
-								<label>
+								<label class="filtr-unit-manufactures">
 									<input type="checkbox" value="Interskol" name="Interskol">
+									<span class="checkbox-indicator"></span>
 									Интерскол
 								</label>
-								<label>
+								<label class="filtr-unit-manufactures">
 									<input type="checkbox" value="Makita" name="Makita">
+									<span class="checkbox-indicator"></span>
 									Makita
 								</label>
-								<label>
+								<label class="filtr-unit-manufactures">
 									<input type="checkbox" value="Dewalt" name="Dewalt">
+									<span class="checkbox-indicator"></span>
 									Dewalt
 								</label>
-								<label>
+								<label class="filtr-unit-manufactures">
 									<input type="checkbox" value="Hitachi" name="Hitachi">
+									<span class="checkbox-indicator"></span>
 									Hitachi
 								</label>
 							</div>
-							<div class="power">
+							<div class="filtr-item">
 								<b>Питание:</b>
-								<label>
+								<label class="filtr-unit-power">
 									<input type="radio" value="acum" name="acum">
 									Аккумуляторные
+									<span class="radio-indicator"></span>
 								</label>
-								<label>
+								<label class="filtr-unit-power">
 									<input type="radio" value="chain" name="chain">
 									Сетевые
+									<span class="radio-indicator"></span>
 								</label>
 							</div>
 							<input type="submit" value="Показать">

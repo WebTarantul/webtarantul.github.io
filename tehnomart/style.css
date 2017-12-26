@@ -373,12 +373,102 @@ body{
 	/*Колонки страницы каталога*/
 	.catalog-columns{
 		display: flex;
+		justify-content: space-between;
 		margin-top: 20px;
 	}
 	/*Фильтр*/
 		.filtr{
 			width: 23.404%;
 		}
+		.filtr-title{
+			background: #f7f3ec;
+			padding: 13px 0;
+		}
+		.filtr-title b{
+      text-transform: uppercase;
+			font-size: 13px;
+			line-height: 17px;
+			margin-left: 19px;
+		}
+		.filtr-item{
+			border-bottom: 1px solid #e5e5e5;
+			padding-bottom: 22px;
+		}
+		.filtr-item b{
+			display: block;
+			font-size: 17px;
+			line-height: 21px;
+			font-weight: 700;
+			margin: 18px 0;
+		}
+		.filtr-item label{
+			display: block;
+			font-size: 15px;
+			line-height: 20px;
+			text-transform: uppercase;
+			margin-bottom: 24px;
+			padding-left: 35px;
+			position: relative;
+		}
+		.filtr-item label:last-child{
+			margin-bottom: 0;
+		}
+		.checkbox-indicator{
+			content: "";
+			display: block;
+			width: 19px;
+			height: 19px;
+			border:2px solid #c1c1c1;
+			border-radius: 3px;
+
+			position: absolute;
+			left: 0;
+			z-index: 0;
+		}
+		.filtr-unit-manufactures input[type="checkbox"]:checked ~ .checkbox-indicator::before{
+			content: url(img/icon-check-on_.png);
+			
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 5;
+		}
+		.filtr-unit-manufactures input[type="checkbox"]{
+			display: none;
+		}
+		.filtr-unit-power{
+			position: relative;
+		}
+		.filtr-unit-power input[type="radio"]{
+			display: none;
+		}
+		.radio-indicator{
+			display: block;
+			content: "";
+			width: 17px;
+			height: 17px;
+			border: 4px solid #c1c1c1;
+			border-radius: 100px;
+
+			position: absolute;
+			top: 50%;
+			margin-top: -10.5px;
+			left: 0;
+		}
+		.filtr-unit-power input[type="radio"]:checked ~ .radio-indicator::after{
+			content: "";
+			display: block;
+			height: 8px;
+			width: 8px;
+			background: #c1c1c1;
+			border-radius: 100px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -4px;
+			margin-left: -4px;
+		}
+		
 	/*Колонка с товарами в каталоге*/
 	/*Сортировка*/
 		.catalog-wraper{
@@ -495,6 +585,7 @@ body{
 		.number-catalog-site-active{
 			background: #ee3643;
 			border-color: #ee3643;
+			color: #fff;
 
 		}
 	/*Описание страницы товара*/
