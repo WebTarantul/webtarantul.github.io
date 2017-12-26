@@ -45,9 +45,9 @@
 					</div>
 			<nav class="main-menu">
 					<ul>
-						<li><a href="#">Главная</a></li>
+						<li><a href="index.html">Главная</a></li>
 						<li><a href="#">Компания</a></li>
-						<li><a href="#">Каталог</a></li>
+						<li><a class="active-menu" href="catalog.html">Каталог</a></li>
 						<li><a href="#">Новости</a></li>
 						<li><a href="#">Спецпредлжения</a></li>
 						<li><a href="#">Доставка</a></li>
@@ -57,12 +57,188 @@
 			</div>
 		</div>
 		</header>
-		<main>
+	<main>
+		<div class="container">
+			<nav class="breadcrumbs">
+					<ul class="breadcrumbs-container">
+						<li class="breadcrumbs-home"><a class="breadcrumbs-link-home" href="index.html">Домой</a></li>
+						<li><a href="index.html">Каталог</a></li>
+						<li><a href="index.html">Инструмент</a></li>
+						<li><a href="catalog.html">Перфораторы</a></li>
+					</ul>
+			</nav>
+			<div class="catalog-title">
+				<h1>Перфораторы</h1>
+			</div>
+				<div class="catalog-columns">
+					<aside class="filtr">
+						<form class="fitr-form" action="https///" method="post">
+							<b>Фильтр:</b>
+							<div class="filtr-price">
+								<label for="price-results"><b>Цена:</b></label>
+								<input id="price-results" type="text">
+							</div>
+							<div class="manufactures-filtr">
+									<b>Производители:</b>
+								<label>
+									<input type="checkbox" value="Bosch" name="Bosch">
+									Bosch
+								</label>
+								<label>
+									<input type="checkbox" value="Interskol" name="Interskol">
+									Интерскол
+								</label>
+								<label>
+									<input type="checkbox" value="Makita" name="Makita">
+									Makita
+								</label>
+								<label>
+									<input type="checkbox" value="Dewalt" name="Dewalt">
+									Dewalt
+								</label>
+								<label>
+									<input type="checkbox" value="Hitachi" name="Hitachi">
+									Hitachi
+								</label>
+							</div>
+							<div class="power">
+								<b>Питание:</b>
+								<label>
+									<input type="radio" value="acum" name="acum">
+									Аккумуляторные
+								</label>
+								<label>
+									<input type="radio" value="chain" name="chain">
+									Сетевые
+								</label>
+							</div>
+							<input type="submit" value="Показать">
+						</form>
+					</aside>
+					<article class="catalog-wraper">
+						<section class="sorting">
+							<b>Сортировка:</b>
+							<ul class="sorting-list">
+								<li><a class="sorting-link sorting-link-active" href="#">По цене</a></li>
+								<li><a class="sorting-link" href="#">По типу</a></li>
+								<li><a class="sorting-link" href="#">По фунционалу</a></li>
+							</ul>
+							<ul class="sorting-btn">
+								<button class="sorting-btn-item sorting-btn-active" ></button>
+								<button class="sorting-btn-item"></button>
+							</ul>
+						</section>
+						<div class="catalog">
+							<section class="product-item">
+								<img src="img/snippet-1.jpg" alt="фото Префоратора Bosh BFG 9000">
+								<h2>Перфоратор BOSCH BFG 9000</h2>
+								<p class="old-price">32500р.</p>
+								<p class="price">25500р.</p>
+								<div class="product-item-btn">
+									<button class="btn-buy">Купить</button>
+									<button class="btn-boockmarks">В закладки</button>
+								</div>
+							</section>
+							<section class="product-item">
+								<img src="img/snippet-1.jpg" alt="фото Префоратора Bosh BFG 9000">
+								<h2>Перфоратор BOSCH BFG 9000</h2>
+								<p class="old-price">32500р.</p>
+								<p class="price">25500р.</p>
+								<div class="product-item-btn">
+									<button class="btn-buy">Купить</button>
+									<button class="btn-boockmarks">В закладки</button>
+								</div>
+							</section>
+							<section class="product-item">
+								<img src="img/snippet-1.jpg" alt="фото Префоратора Bosh BFG 9000">
+								<h2>Перфоратор BOSCH BFG 9000</h2>
+								<p class="old-price">32500р.</p>
+								<p class="price">25500р.</p>
+								<div class="product-item-btn">
+									<button class="btn-buy">Купить</button>
+									<button class="btn-boockmarks">В закладки</button>
+								</div>
+							</section>
+							<section class="product-item">
+								<img src="img/snippet-1.jpg" alt="фото Префоратора Bosh BFG 9000">
+								<h2>Перфоратор BOSCH BFG 9000</h2>
+								<p class="old-price">32500р.</p>
+								<p class="price">25500р.</p>
+								<div class="product-item-btn">
+									<button class="btn-buy">Купить</button>
+									<button class="btn-boockmarks">В закладки</button>
+								</div>
+							</section>
+							<section class="product-item">
+								<img src="img/snippet-1.jpg" alt="фото Префоратора Bosh BFG 9000">
+								<h2>Перфоратор BOSCH BFG 9000</h2>
+								<p class="old-price">32500р.</p>
+								<p class="price">25500р.</p>
+								<div class="product-item-btn">
+									<button class="btn-buy">Купить</button>
+									<button class="btn-boockmarks">В закладки</button>
+								</div>
+							</section>
+							<section class="product-item">
+								<img src="img/snippet-1.jpg" alt="фото Префоратора Bosh BFG 9000">
+								<h2>Перфоратор BOSCH BFG 9000</h2>
+								<p class="old-price">32500р.</p>
+								<p class="price">25500р.</p>
+								<div class="product-item-btn">
+									<button class="btn-buy">Купить</button>
+									<button class="btn-boockmarks">В закладки</button>
+								</div>
+							</section>
+							<section class="product-item">
+								<img src="img/snippet-1.jpg" alt="фото Префоратора Bosh BFG 9000">
+								<h2>Перфоратор BOSCH BFG 9000</h2>
+								<p class="old-price">32500р.</p>
+								<p class="price">25500р.</p>
+								<div class="product-item-btn">
+									<button class="btn-buy">Купить</button>
+									<button class="btn-boockmarks">В закладки</button>
+								</div>
+							</section>
+							<section class="product-item">
+								<img src="img/snippet-1.jpg" alt="фото Префоратора Bosh BFG 9000">
+								<h2>Перфоратор BOSCH BFG 9000</h2>
+								<p class="old-price">32500р.</p>
+								<p class="price">25500р.</p>
+								<div class="product-item-btn">
+									<button class="btn-buy">Купить</button>
+									<button class="btn-boockmarks">В закладки</button>
+								</div>
+							</section>
+							<section class="product-item">
+								<img src="img/snippet-1.jpg" alt="фото Префоратора Bosh BFG 9000">
+								<h2>Перфоратор BOSCH BFG 9000</h2>
+								<p class="old-price">32500р.</p>
+								<p class="price">25500р.</p>
+								<div class="product-item-btn">
+									<button class="btn-buy">Купить</button>
+									<button class="btn-boockmarks">В закладки</button>
+								</div>
+							</section>
+						</div>
+						<nav class="numeric-breadcrumbs">
+							<ul>
+								<li><a class="number-catalog-site number-catalog-site-active" href="">1</a></li>
+								<li><a class="number-catalog-site" href="">2</a></li>
+								<li><a class="number-catalog-site" href="">3</a></li>
+								<li><a class="number-catalog-site prev-catalog-site" href="">Следущая</a></li>
+							</ul>
+						</nav>
+					</article>
+				</div>
+		</div>
+		<div class="discrption-perforator">
 			<div class="container">
-				
-</div>
-
-</main>
+				<h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+				<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+			</div>
+		</div>
+	</main>
 		<footer class="main-footer">
 			<div class="top-main-footer">
 				<div class="container ftr-columns">
@@ -77,7 +253,7 @@
 						<ul class="top-right-align">
 							<li><a href="#">Компания</a></li>
 							<li><a href="#">Новости</a></li>
-							<li><a href="#">Каталог</a></li>
+							<li><a href="catalog.html">Каталог</a></li>
 							<li><a href="#">Доставка</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
