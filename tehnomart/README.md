@@ -1,2 +1,0 @@
-# webtarantul.github.io
-Техномарт
