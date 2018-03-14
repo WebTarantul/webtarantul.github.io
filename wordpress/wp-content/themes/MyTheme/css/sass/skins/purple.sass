@@ -1,0 +1,132 @@
+@import "../bourbon/bourbon"
+
+$color: #8238A7 //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p,
+footer.main-footer,
+.s-about li
+	color: $text_color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+.main-color__bg
+	background-color: $main_color
+.toggle-menu
+	background-color: $main-color
+.top-menu
+	a:hover
+		color: $color
+		background: rgba(255, 255, 255, .1)
+		transition: background 0.7s
+	a
+		+kerning(4)
+
+.top-text
+	p
+		color: $bg_light
+		+kerning(4)
+
+[class^="s-"]
+	.s-descr
+		color: #000
+	h3
+		+kerning(3)
+		color: $text-color
+
+.bg__light
+	background-color: $bg_light
+
+.bg__dark
+	background-color: $main-color
+	color: #fff
+
+	a
+		color: #fff
+	.s-descr
+		color: #fff
+	.s-descr::after
+		background-color: #fff
+
+.s-descr
+	+kerning(5)
+	&:after
+		background-color: $main-color
+.main-footer
+	+kerning(0)
+
+.s-about
+	p:nth-child(even)
+		color: $color
+.person-header
+	+kerning(2)
+
+.s-resume
+	h3
+		+kerning(1)
+		font-size: 16px
+		font-weight: 400
+		color: $main_color
+
+.resume-item
+	.year
+		background-color: $color
+		color: #fff
+		+kerning(3)
+
+.portfolio-nav
+	li
+		color: $text_color
+		+kerning(2)
+	li.active
+		color: #fff
+		border-bottom: 1px solid $color
+
+.portfolio-item__modal
+	a
+		border-color: $color
+		color: $color
+
+.porfolio-item__descr
+	border-color: $color
+
+.ft-wrap
+	.social-wrap a
+		color: $color
+
+[class^="icon-"]
+	color: $color
+
+form
+	input,
+	textarea
+		+kerning(2)
+		&:focus
+			border: 1px solid $color
+	button
+		background-color: $color
+		font-weight: 600
+		+kerning(2)
+	.form-group
+		+kerning(2)
+		color: $text-color
+
+		.text-danger
+			color: $color
+			font-weight: 400
