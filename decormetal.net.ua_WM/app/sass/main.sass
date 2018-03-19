@@ -27,6 +27,15 @@ body
 				border-color: red
 			&:required:valid
 				border-color: green
+.visually-hidden
+	position: absolute !important
+	clip: rect(1px 1px 1px 1px)
+	clip: rect(1px, 1px, 1px, 1px)
+	padding:0 !important
+	border:0 !important
+	height: 1px !important 
+	width: 1px !important 
+	overflow: hidden
 
 .btn
   -webkit-border-radius: 4
@@ -38,19 +47,24 @@ body
   font-size: 16px
   line-height: 18px
   font-weight: 700
-  padding: 5px 10px 5px 10px
+  padding: 10px 10px 10px 10px
   border: solid #F4424E 2px
   text-decoration: none
   transition: all 0.25s ease
+  text-decoration: none
 .btn:hover
 	cursor: pointer
 	color: $light
 	border-color: $light
+	text-decoration: none
+	
 
 #my-menu 
     background-color: $grau
+    
 .mm-menu   
 	width: 350px !important   
+
 html.mm-opening .mm-slideout
 	-webkit-transform: translate(350px, 0) !important
   -moz-transform: translate(350px, 0) !important
@@ -160,7 +174,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	position: relative
 
 .main-header__topline
-	padding-top: 30px
+	padding-top: 20px
 	z-index: 1
 
 .main-header__logo
@@ -192,7 +206,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 .main-header__phonebox
 	position: relative
 	margin-top: 0
-	margin-left: 19%
+	margin-left: 36%
 	width: 230px
 	display: flex
 	align-items: start
@@ -222,22 +236,119 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	font-size: 20px
 	line-height: 22px
 	white-space: nowrap
-
 .main-header__promo
-	text-align: center
+	display: flex
+	height: 100%
+	max-width: 70%
+	margin-top: 40px
+.main-heder__center
+	margin: auto
+.main-header__title
+	margin: 0 auto
 	padding: 0
-	padding-left: 10px
-	padding-right: 10px
-	background: rgba(0, 0, 0, .3)
-	
-	margin-right: auto
-	margin-top: 50px
+	max-width: 545px
+	font-size: 26px
+	text-align: center
+	padding: 5px 10px
+	background-color: rgba(0, 0, 0, .5)
 	color: #fff
-	font-size: 30px
+		
 .caps
 	text-transform: uppercase
+.main-header__features
+	margin-top: 40px
+	display: flex
 
+.features__items
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin: 0
+		padding: 0
+		max-width: 555px
+		margin: auto
 
+.features__item
+	margin: 0
+	padding: 0
+	list-style: none
+	width: 140px
+	height: 40px
+	background-color: rgba(255, 255, 255, .8)
+	border-bottom-right-radius: 50px
+	border-top-right-radius: 50px
+	font-size: 18px
+	margin-top: 10px
+	padding-left: 40px
+	padding-right: 10px
+	position: relative
+	text-align: left
+	&::before
+		content: ""
+		display: block
+		width: 40px
+		height: 40px
+		position: absolute
+		left: 0
+		top: 0
+		background: url("../img/header/6-kutnik3.png")
+		background-position: center
+		background-size: cover
+	&::after
+		content: ""
+		display: block
+		width: 40px
+		height: 40px
+		position: absolute
+		left: 0
+		top: 0
+		background: url("../img/icons_sprite_2.png")
+		background-size: 340%
+	&:nth-child(1)::after
+		background-position: -70px -59px
+	&:nth-child(2)::after
+		background-position: 101px 42px
+	&:nth-child(3)::after
+		background-position: -2px 42px
+	&:nth-child(4)::after
+		background-position: 65px 76px
+	&:nth-child(5)::after
+		background-position: 99px 78px
+	&:nth-child(6)::after
+		background-position: -2px 76px
+	&:nth-child(7)::after
+		background-position: 65px 110px
+	&:nth-child(8)::after
+		background-position: 98px 9px
+	&:nth-child(9)::after
+		background-position: 134px 10px
+		
+	h6
+		display: inline-block
+		vertical-align: center
 
+.main-header__composition
+	text-align: center
 
+.main-header__utp
+	display: inline-block
+	margin-top: 40px
+	padding: 5px 20px
+	width: 530px
+	text-align: center
+	max-width: 400px
+	border: solid 2px $accent
+	color: $black
+.main-header__buttons
+	display: flex
+	width: 330px
+	justify-content: space-between
+	margin: auto
+	margin-top: 40px
+.main-header__btn-more
+	background: $accent
+	color: #fff
+	&:hover
+		color: #fff
+		background-color: $light
 @import "media" // Always at the end

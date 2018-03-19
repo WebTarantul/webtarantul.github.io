@@ -2,7 +2,7 @@ $default-font: "opensans", sans-serif
 $accent: #F4424E
 $light: rgba(255, 68, 68, .8)
 $grau: hsl(240, 2%, 76%)
-
+$black: #202225
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px
 $grid-columns: 12
@@ -10,3 +10,13 @@ $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px)
 
 $gutter: $grid-gutter-width
+
+=vh()
+	position: absolute !important
+	clip: rect(1px 1px 1px 1px)
+	clip: rect(1px, 1px, 1px, 1px)
+	padding:0 !important
+	border:0 !important
+	height: 1px !important 
+	width: 1px !important 
+	overflow: hidden

@@ -14,22 +14,51 @@
 		margin-left: 0
 	.main-header__logo
 			margin-right: 30px
+	.main-header__title
+		font-size: 24px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767.98px)
 	/**/
-	
-	
+	.main-header__title
+		font-size: 20px
+	.features__item--md-hidden
+		+vh
+	.features__items
+		justify-content: space-around
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575.98px)
 	/**/
+	body
+		font-size: 16px
 	.main-header__logo
 		margin-left: 0
 		margin-bottom: 10px
+	.logo__promo
+		+vh
 	.main-header__phone-items
 		margin: auto
 	.main-header__btn
 		margin: auto
+	
+	.main-header__promo
+		max-width: 100%
+
+	.main-header__title
+		font-size: 16px
+		padding: 5px
+		width: 330px
+	.features__item--md-hidden
+		display: block
+	.main-header__utp
+		font-size: 16px
+		max-width: 250px
+
+	.main-header__buttons
+		width: 100%
+		justfy-content: center
+	.main-header__utp--sm-hidden
+		+vh
 /*==========  Mobile First  ==========*/
 
 /* Extra Small Devices, Phones */
