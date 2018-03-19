@@ -2,6 +2,7 @@
 @import "fonts"
 @import "libs"
 
+
 ::placeholder
 	color: #666
 
@@ -13,7 +14,7 @@ html, body
 	height: 100%
 
 body
-	font-size: 16px
+	font-size: 22px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
@@ -27,13 +28,216 @@ body
 			&:required:valid
 				border-color: green
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
+.btn
+  -webkit-border-radius: 4
+  -moz-border-radius: 4
+  border-radius: 4px
+  color: #F4424E
+  text-transform: uppercase
+  background: none
+  font-size: 16px
+  line-height: 18px
+  font-weight: 700
+  padding: 5px 10px 5px 10px
+  border: solid #F4424E 2px
+  text-decoration: none
+  transition: all 0.25s ease
+.btn:hover
+	cursor: pointer
+	color: $light
+	border-color: $light
 
-.text-center
+#my-menu 
+    background-color: $grau
+.mm-menu   
+	width: 350px !important   
+html.mm-opening .mm-slideout
+	-webkit-transform: translate(350px, 0) !important
+  -moz-transform: translate(350px, 0) !important
+  -ms-transform: translate(350px, 0) !important
+  -o-transform: translate(350px, 0) !important
+  transform: translate(350px, 0) !important
+.hamburger.hamburger--stand
+	appearance: none
+.hamburger
+	position: fixed
+	top: 15px
+	left: 0
+	z-index: 100
+.logo__img--favicon
+	display: block
+	width: 80px
+	height: 80px
+	border: $accent 2px dotted
+	font-family: marckscript
+	font-weight: 700
+	font-size: 80px
+	line-height: 90px
+	margin-left: 50%
+	transform: translateX(-50%)
+	cursor: context-menu
+.mm-menu .mm-navbar a, .mm-menu .mm-navbar>*
+	color: #000
+	transition: color 0.3s ease
+.mm-menu .mm-navbar a:hover, .mm-menu .mm-navbar>*:hover
+	color: rgba(0, 0, 0, 1)
+	cursor: context-menu
+.mm-navbar
+	height: auto
+	position: relative
+	border-bottom: none
+	margin-bottom: 40px
+.mm-panels>.mm-panel.mm-hasnavbar
+	padding-left: 20px
+	padding-top: 0
+.mm-menu .mm-selected a,
+.mm-listview>li:hover
+	color: $accent
+	transition: color 0.25s ease
+.mm-menu .mm-listview>li.mm-selected>a:not(.mm-next), .mm-menu .mm-listview>li.mm-selected>span
+	background: none
+panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+    margin-top: 0
+.mm-listview
+	padding-left: 100px	
+.main-nav__item
+	text-transform: uppercase
+.main-nav__item--home::before
+	content: "\f0a6"
+	font-family: 'fontawesome'
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: -15px
+	font-size: 20px
+.main-nav__item--company::before
+	content: "\f0f7 "
+	font-family: 'fontawesome'
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: -15px
+	font-size: 20px
+.main-nav__item--works::before
+	content: "\f0e3  "
+	font-family: 'fontawesome'
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: -15px
+	font-size: 20px
+.main-nav__item--reviews::before
+	content: "\f0c0"
+	font-family: 'fontawesome'
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: -15px
+	font-size: 20px
+.main-nav__item--contacts::before
+	content: "\f041"
+	font-family: 'fontawesome'
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: -10px
+	font-size: 20px
+
+.hamburger-inner,.hamburger-inner::before, .hamburger-inner::after
+	background: $accent 
+	height: 2px
+	width: 34px
+	border-radius: 0
+	z-index: 100
+
+.main-header
+	min-height: 700px
+	height: 100vh
+	background: url("../img/header/fon-header_1.jpg") #B8CACE
+	background-repeat: no-repeat
+	background-position: center
+	background-size: auto
+	position: relative
+
+.main-header__topline
+	padding-top: 30px
+	z-index: 1
+
+.main-header__logo
+	margin-left: 40px
+	display: flex
+	flex-direction: column
+
+.logo__img
+	display: block
+	width: 190px
+	height: 53px
+	border: $accent 2px dotted
+	font-family: marckscript
+	font-weight: 700
+	font-size: 40px
+	line-height: 55px
+	margin: auto
+
+.logo__promo
+	width: 193px
+	font-size: 11px
 	text-align: center
+	margin-top: 10px
+	margin-bottom: 0
+	margin: auto
+	.logo__wrap
+		white-space: nowrap
+
+.main-header__phonebox
+	position: relative
+	margin-top: 0
+	margin-left: 19%
+	width: 230px
+	display: flex
+	align-items: start
+	flex-direction: column
+.main-header__phone-items
+	margin: 0
+	margin-bottom: 10px
+	position: relative
+		
+.main-header__phone-items::after
+	content: "\f095"
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	font-family: fontawesome
+	left: -30px
+	color: $accent
+	opacity: 0.8
+
+.main-header__btn
+	width: 190px
+	font-size: 15px
+
+	
+.main-header__phone-item
+	display: block
+	font-size: 20px
+	line-height: 22px
+	white-space: nowrap
+
+.main-header__promo
+	text-align: center
+	padding: 0
+	padding-left: 10px
+	padding-right: 10px
+	background: rgba(0, 0, 0, .3)
+	
+	margin-right: auto
+	margin-top: 50px
+	color: #fff
+	font-size: 30px
+.caps
+	text-transform: uppercase
+
+
 
 
 @import "media" // Always at the end

@@ -1,38 +1,53 @@
 @import "vars"
 
-
 /*==========  Desktop First  ==========*/
 
-
-//Extra large: ≥1200px
-+media-breakpoint-down(xl)
-
-//Large: ≥992px
-+media-breakpoint-down(lg)
-
-//Medium: ≥768px
-+media-breakpoint-down(md)
-
-//Small: ≥576px
-+media-breakpoint-down(sm)
-
-//Extra small: >0
-+media-breakpoint-down(xs)
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199.98px)
+	/**/
 
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991.98px)
+	/**/
+	.main-header__phonebox
+		margin-left: 0
+	.main-header__logo
+			margin-right: 30px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767.98px)
+	/**/
+	
+	
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 575.98px)
+	/**/
+	.main-header__logo
+		margin-left: 0
+		margin-bottom: 10px
+	.main-header__phone-items
+		margin: auto
+	.main-header__btn
+		margin: auto
 /*==========  Mobile First  ==========*/
 
-//Extra small: <576px
-+media-breakpoint-up(xs)
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px)
+	/**/
 
-//Small: ≤576px
-+media-breakpoint-up(sm)
 
-//Medium: ≤768px
-+media-breakpoint-up(md)
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
 
-//Large: ≤992px
-+media-breakpoint-up(lg)
 
-//Extra large: ≤1200px
-+media-breakpoint-up(xl)
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
