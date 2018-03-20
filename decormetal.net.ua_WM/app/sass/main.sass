@@ -27,6 +27,8 @@ body
 				border-color: red
 			&:required:valid
 				border-color: green
+
+
 .visually-hidden
 	position: absolute !important
 	clip: rect(1px 1px 1px 1px)
@@ -183,7 +185,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	flex-direction: column
 
 .logo__img
-	display: block
+	
 	width: 190px
 	height: 53px
 	border: $accent 2px dotted
@@ -351,4 +353,118 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	&:hover
 		color: #fff
 		background-color: $light
+
+.company
+	background-color: rgba(17, 34, 34, .06)
+
+.company__items
+
+.company__item
+	width: 200px
+	background: #999
+	margin: auto
+.company__title
+	text-align: center
+	
+	.logo__img
+		border: none
+		
+.form-10p
+	min-height: 253px
+
+.stainless-advantages__list
+	display: flex
+	flex-wrap: wrap
+	flex-shrink: 0
+
+.stainless-advateges__item
+	width: 280px
+	height: 340px
+	background: #999
+	margin: auto
+	margin-top: 10px
+
+
+//callback
+.callback__wrapper
+	width: 530px
+	min-height: 90px
+	margin: auto
+	display: flex
+
+.callback__content
+	max-height: 90px
+	width: 100%
+	color: $black
+	margin: auto
+	border: solid red 3px
+	position: relative
+	font-size: 25px
+	text-align: center
+	
+
+
+.callback__content::after 
+	content: ""
+	position: absolute
+	top: -3px
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 50
+	width: 80%
+	height: 3px
+	color: white
+	background-color: #f5f5f5
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.8)
+
+.callback__content::before 
+	content: ""
+	position: absolute
+	bottom: -3px
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 50
+	width: 57%
+	height: 3px
+	color: white
+	background-color: #f5f5f5
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.8)
+
+.callback__text
+  display: block
+  margin-top: -16px
+  font-size: 20px
+  font-weight: 700
+  text-align: center
+  line-height: 26px
+ 
+.callback__btn
+	position: relative
+	top: 10px
+	
+.test
+  width: 530px
+  height: 100px
+  position: relative
+  border-left: 3px solid $accent
+  border-right: 3px solid $accent
+  margin: 50px
+  border-radius: 5px
+
+.test::before
+  position: absolute
+  content: ""
+  width: 100%
+  height: 3px
+  top: 0
+  Background-image: linear-gradient(90deg, $accent 0%, $accent 20%, transparent 20%, transparent 80%, $accent 80%, $accent 100%)
+.test::after
+  position: absolute
+  content: ""
+  width: 100%
+  height: 3px
+  bottom: 0
+  Background-image: linear-gradient(90deg, $accent 0%, $accent 20%, transparent 20%, transparent 80%, $accent 80%, $accent 100%)
+
+
 @import "media" // Always at the end
