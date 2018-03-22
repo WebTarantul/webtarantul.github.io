@@ -1,0 +1,87 @@
+//example:
+//<div class="hexagon">
+//  <div class="hexTop"></div>
+//  <div class="hexBottom"></div>
+//</div>
+
+.hexagon 
+  position: absolute
+  top: 0px
+  left: 0px
+  width: 200px 
+  height: 115.47px
+  margin: 57.74px 0
+  background-image: url(../img/metallic-effect-rotate.jpg)
+  background-color: #999
+  background-size: auto 219.3931px
+  background-position: center
+  background-transform: rotate(45deg)
+  box-shadow: 0 0 20px rgba(0,0,0,1)
+  border-left: solid 5px $accent
+  border-right: solid 5px $accent
+  margin-left: 20px
+  text-align: left
+  z-index: -1
+  
+
+
+.hexTop,
+.hexBottom 
+  position: absolute
+  z-index: 0
+  width: 141.42px
+  height: 141.42px
+  overflow: hidden
+  -webkit-transform: scaleY(0.5774) rotate(-45deg)
+  -ms-transform: scaleY(0.5774) rotate(-45deg)
+  transform: scaleY(0.5774) rotate(-45deg)
+  background: inherit
+  left: 24.29px
+  box-shadow: 0 0 20px rgba(0,0,0,1)
+
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after 
+  content: ""
+  position: absolute
+  width: 190.0000px
+  height: 109.69655114602891px
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-54.8483px)
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-54.8483px)
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-54.8483px)
+  -webkit-transform-origin: 0 0
+  -ms-transform-origin: 0 0
+  transform-origin: 0 0
+  background: inherit
+
+
+.hexTop 
+  top: -70.7107px
+  border-top: solid 7.0711px $accent
+  border-right: solid 7.0711px $accent
+
+
+.hexTop:after 
+  background-position: center top
+
+
+.hexBottom 
+  bottom: -70.7107px
+  border-bottom: solid 7.0711px $accent
+  border-left: solid 7.0711px $accent
+
+
+.hexBottom:after 
+  background-position: center bottom
+
+
+.hexagon:after 
+  content: ""
+  position: absolute
+  top: 2.8868px
+  left: 0
+  width: 190.0000px
+  height: 109.6966px
+  z-index: 2
+  background: inherit

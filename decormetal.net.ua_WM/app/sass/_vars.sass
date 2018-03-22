@@ -1,7 +1,7 @@
 $default-font: "opensans", sans-serif
 $accent: #F4424E
 $light: rgba(255, 68, 68, .8)
-$grau: hsl(240, 2%, 76%)
+$grau: #a9a9a9
 $black: #202225
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px
@@ -20,3 +20,14 @@ $gutter: $grid-gutter-width
 	height: 1px !important 
 	width: 1px !important 
 	overflow: hidden
+
+=inverse()
+	&::before
+		content: ""
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: hsla(0, 1%, 24%, .99)
+		opacity: .80

@@ -1,6 +1,7 @@
 $(function() {
 
       $("#my-menu").mmenu({
+      	"pageScroll": true,
       
           extensions: [
           "fx-listitems-drop",
@@ -19,4 +20,30 @@ $(function() {
       	$('.main-nav__item.mm-selected').removeClass('mm-selected');
       })
 
+  $('.reviews__corousel').owlCarousel({
+  	loop: true,
+  	smartSpeed: 700,
+  	nav: true,
+  	autoplay: true,
+  	responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        960:{
+            items:1,
+            nav:false
+        },
+        1920:{
+            items:1,
+            nav:true,
+            loop:false
+        }
+    }
+  	
+  });
+
 });
+
+

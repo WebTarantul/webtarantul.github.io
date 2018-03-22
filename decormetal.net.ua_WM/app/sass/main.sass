@@ -1,6 +1,7 @@
 @import "vars"
 @import "fonts"
 @import "libs"
+@import "hexagon"
 
 
 ::placeholder
@@ -28,6 +29,8 @@ body
 			&:required:valid
 				border-color: green
 
+.inverse
+
 
 .visually-hidden
 	position: absolute !important
@@ -54,12 +57,15 @@ body
   text-decoration: none
   transition: all 0.25s ease
   text-decoration: none
+
 .btn:hover
 	cursor: pointer
 	color: $light
 	border-color: $light
 	text-decoration: none
 	
+.accent-text
+	color: $accent
 
 #my-menu 
     background-color: $grau
@@ -355,36 +361,118 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 		background-color: $light
 
 .company
-	background-color: rgba(17, 34, 34, .06)
-
-.company__items
-
-.company__item
-	width: 200px
-	background: #999
-	margin: auto
-.company__title
+	padding-top: 50px
+	padding-bottom: 50px
 	text-align: center
+	background-color: rgba(17, 34, 34, .07)
 	
 	.logo__img
-		border: none
-		
-.form-10p
-	min-height: 253px
+			border: none
 
-.stainless-advantages__list
+.company__list,
+.stainless-advantages__list,
+.galery__list,
+.problems__list,
+.benefits__list
+	padding: 0
+	list-style: none
+
+.company__list
 	display: flex
 	flex-wrap: wrap
 	flex-shrink: 0
+	position: relative
 
-.stainless-advateges__item
-	width: 280px
-	height: 340px
-	background: #999
+.company__item
+	width: 252px
+	min-height: 340px
 	margin: auto
 	margin-top: 10px
+	position: relative
+	.hexagon
+		left: 5px
+.company__accent-text
+	font-size: 40px
+	color: #fff
+	font-weight: 700
+	margin: 0
+	margin-top: 79px
+	text-align: center
+.company__content
+	font-weight: 700
+	margin-top: 105px
+		
+		
+.form-10p
+	padding: 50px 0
+	text-align: center
+	background-color: #999
+	position: relative
+	background: url(../img/form-10p/fon-form-10p.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	color: #fff
+	+inverse
 
+.form-10p__input-wrapper
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	flex-shrink: 0
+	align-items: flex-start
 
+	.form-10p__btn
+		background-color: $accent
+	.form-10p__btn:hover
+		color: $grau
+.form-10p__input,
+.form-10p__btn
+	width: 192px
+	height: 32px
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+	background: none
+	border: 1px solid $accent
+	color: #fff
+	border-radius: 3px
+
+.form-10p__input
+	padding: 0 15px
+	padding-right: 30px
+	font-size: 16px
+
+.form-10p__icon
+	margin: 0
+	position: relative
+	line-height: 16px
+	
+.form-10p__icon:before
+	content: "\f095"
+	position: absolute
+	top: 8px
+	right: 5px
+	font-family: fontawesome
+	display: block
+
+.form-10p__text
+	font-size: 16px
+	line-height: 18px
+	margin-top: 20px
+	position: relative
+
+.form-10p__call-you
+	position: relative
+	padding-left: 25px
+	&::before
+		content: "\f095"
+		position: absolute
+		top: 0px
+		left: 0px
+		font-family: fontawesome
+		display: block
+
+		
 //callback
 .callback__wrapper
 	width: 530px
@@ -393,46 +481,38 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	display: flex
 
 .callback__content
-	max-height: 90px
-	width: 100%
+	width: 530px
+	height: 85px
 	color: $black
 	margin: auto
-	border: solid red 3px
-	position: relative
 	font-size: 25px
 	text-align: center
-	
-
+	border-left: 3px solid $accent
+	border-right: 3px solid $accent
+	border-radius: 5px
+	position: relative
 
 .callback__content::after 
-	content: ""
 	position: absolute
-	top: -3px
-	left: 50%
-	transform: translateX(-50%)
-	z-index: 50
-	width: 80%
+	content: ""
+	width: 100%
 	height: 3px
-	color: white
-	background-color: #f5f5f5
-	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.8)
+	bottom: 0
+	left: 0
+	Background-image: linear-gradient(90deg, $accent 0%, $accent 20%, transparent 20%, transparent 80%, $accent 80%, $accent 100%)
 
 .callback__content::before 
-	content: ""
 	position: absolute
-	bottom: -3px
-	left: 50%
-	transform: translateX(-50%)
-	z-index: 50
-	width: 57%
+	content: ""
+	width: 100%
 	height: 3px
-	color: white
-	background-color: #f5f5f5
-	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.8)
+	top: 0
+	left: 0
+	Background-image: linear-gradient(90deg, $accent 0%, $accent 10%, transparent 10%, transparent 90%, $accent 90%, $accent 100%)
 
 .callback__text
   display: block
-  margin-top: -16px
+  margin-top: -13px
   font-size: 20px
   font-weight: 700
   text-align: center
@@ -440,31 +520,184 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
  
 .callback__btn
 	position: relative
-	top: 10px
+	top: 8px
+//callback кінець	
+
+.stainless-advantages
+	padding-top: 50px
+	padding-bottom: 50px
+	text-align: center
 	
-.test
-  width: 530px
-  height: 100px
-  position: relative
-  border-left: 3px solid $accent
-  border-right: 3px solid $accent
-  margin: 50px
-  border-radius: 5px
+.stainless-advantages__list
+	display: flex
+	flex-wrap: wrap
+	flex-shrink: 0
 
-.test::before
-  position: absolute
-  content: ""
-  width: 100%
-  height: 3px
-  top: 0
-  Background-image: linear-gradient(90deg, $accent 0%, $accent 20%, transparent 20%, transparent 80%, $accent 80%, $accent 100%)
-.test::after
-  position: absolute
-  content: ""
-  width: 100%
-  height: 3px
-  bottom: 0
-  Background-image: linear-gradient(90deg, $accent 0%, $accent 20%, transparent 20%, transparent 80%, $accent 80%, $accent 100%)
+.stainless-advantages__item
+	width: 252px
+	min-height: 340px
+	position: relative
+	margin: auto
+	margin-top: 10px
+	.hexagon
+		background-image: none
+		background-size: auto
+		background-color: $accent
+	&::before
+			content: ""
+			width: 210px
+			height: 210px
+			display: block
+			background-size: auto 114px 
+			background-repeat: no-repeat
+			background-position: 62px 58px
+			z-index: 2
+			position: absolute
+			top: 0
+			left: 0
+	&:nth-child(1):before
+		background-image: url(../img/adwantages-stainless/econom.png)
+	&:nth-child(2):before
+		background-image: url(../img/adwantages-stainless/4.png)
+	&:nth-child(3):before
+		background-image: url(../img/adwantages-stainless/estetic.png)
+	&:nth-child(4):before
+		background-image: url(../img/adwantages-stainless/koroziyna_st.png)
+	&:nth-child(5):before
+		background-image: url(../img/adwantages-stainless/jarostiykist.png)
+	&:nth-child(6):before
+		background-image: url(../img/adwantages-stainless/micnist.png)
+.stainless-advantages__content
+	margin: 0
+	margin-top: 247px
+	font-size: 16px
+	line-height: 20px
+	.accent-text
+		display: block
+		font-size: 20px
+			
+
+		
+.galery
+	padding-top: 50px
+	padding-bottom: 50px
+	text-align: center
+	
+.galery__list
+	display: flex
+	flex-wrap: wrap
+	flex-shrink: 0
+
+.galery__item
+	width: 200px
+	height: 230px
+	background: #999
+	margin: auto
+	margin-top: 10px
+
+.problems
+	padding-top: 50px
+	padding-bottom: 50px
+	text-align: center
+	
+.problems__list
+	display: flex
+	flex-wrap: wrap
+	flex-shrink: 0
+
+.problems__item
+	width: 200px
+	height: 230px
+	background: #999
+	margin: auto
+	margin-top: 10px
+ 
+.benefits
+	padding-top: 50px
+	padding-bottom: 50px
+	text-align: center
+	
+.benefits__list
+	display: flex
+	flex-wrap: wrap
+	flex-shrink: 0
+
+.benefits__item
+	width: 200px
+	height: 230px
+	background: #999
+	margin: auto
+	margin-top: 10px
+ 
+.reviews
+	text-align: center
+	
+	
+.reviews__list
+	
 
 
+.reviews__item
+	p
+		margin: 0px 150px
+	&::before,::after
+
+.reviews__callback
+	.logo__img
+		border: none
+	.callback__btn
+		top: -22px
+
+.feedback__title
+	text-align: center
+	
+
+.feedback__form
+	width: 335px
+	min-height: 490px
+	background: #999
+	margin: auto
+
+.main-footer
+
+	&__logo,
+	&__phonebox
+		display: flex
+		flex-shrink: 0
+		justify-content: space-between
+		margin: auto
+		align-items: flex-start
+		flex-wrap: wrap
+
+.main-footer__phone-items,
+.main-footer__btn,
+.logo__img,
+.logo__promo
+	margin: auto
+
+//owl-carousel
+.owl-carousel .owl-dots.disabled
+	display: block
+
+.owl-carousel .owl-dot
+	background: #000
+
+.owl-dots
+	width: 100%
+	text-align: center
+	margin-top: 60px
+	.owl-dot
+		width: 8px
+		height: 8px
+		background-color: #999
+		border-radius: 10em
+		display: inline-block
+		margin: 4px
+		transition: background-color .25s ease, transform .25s ease
+		
+		&.active
+			background-color: $accent
+			transform: scale(1.3)
+			border: none
+			
 @import "media" // Always at the end

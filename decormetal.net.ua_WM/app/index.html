@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<base href="/">
+	
 
 	<title>OptimizedHTML 4</title>
 	<meta name="description" content="">
@@ -40,10 +40,10 @@
 						<nav class="main-nav" id="my-menu">
 							<ul class="main-nav__box">
 								<li class="main-nav__item main-nav__item--home"><a href="#">Головна</a></li>
-								<li class="main-nav__item main-nav__item--company"><a href="#">Про компанію</a></li>
+								<li class="main-nav__item main-nav__item--company"><a href="#form10">Про компанію</a></li>
 								<li class="main-nav__item main-nav__item--works"><a href="#">Наші роботи</a></li>
 								<li class="main-nav__item main-nav__item--reviews"><a href="#">Відгуки</a></li>
-								<li class="main-nav__item main-nav__item--contacts"><a href="#">Контакти</a></li>
+								<li class="main-nav__item main-nav__item--contacts"><a href="#my-footer">Контакти</a></li>
 							</ul>
 						</nav>
 						<div class="main-header__logo logo col-12 col-sm-auto">
@@ -110,41 +110,54 @@
 			</header>
 
 		</div>
+
 		<div id="my-content">
 			<main class="main-content">
 				<section class="company">
-					<div class="company__wrapper container">
-						<h1 class="company__title">Компанія <span class="logo__img">DecorMetal</span> - це</h1>
-						<ul class="company__items row">
+					<div class="container">
+						<div class="row">
 							<div class="col">
-								<li class="company__item"></li>
+								<h1 class="company__title">Компанія <span class="accent-text"><span class="logo__img">Decor Metal</span> - це</span></h1>
+								<ul class="company__list">
+									<li class="company__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="company__accent-text">10 років</p>
+										<p class="company__content"><span class="accent-text">Більше 10 років</span><br>на ринку</p>
+									</li>
+									<li class="company__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="company__accent-text">950</p>
+										<p class="company__content">Більше 950 <span class="accent-text">задоволених клієнтів</span></p>
+									</li>
+									<li class="company__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="company__accent-text">5 років</p>
+										<p class="company__content"><span class="accent-text">5 років гарантії</span><br>на наші вироби</p>
+									</li>
+								</ul>
 							</div>
-							<div class="col">
-								<li class="company__item"></li>
-							</div>
-							<div class="col">
-								<li class="company__item"></li>
-							</div>
-						</ul>
+						</div>
 					</div>
 				</section>
-				<section class="form-10p">
+				<section class="form-10p" id="form10">
 					<h1 class="visually-hidden">Форма зворотнього звя'зку</h1>
 					<div class="container">
 						<form action="###" class="form-10p__form" method="POST">
 							<div class="row">
 								<p class="form-10p__title col-12">
 									<b>Залиште заявку на безкоштовну консультацію <br></b> 
-									прямо зараз та отримайте <span class="form-10p__accent">10% знижки</span>
+									прямо зараз та отримайте <span class="accent-text">10% знижки</span>
 								</p>
 								<div class="col-12">
-									<input type="name" class="form-10p__input" required="">
-									<input type="tel" class="form-10p__input" required="">
-									<input type="submit" class="form-10p__btn btn" value="Чекаю дзвінка">
+									<div class="form-10p__input-wrapper">
+										<label class="form-10p__icon"><input type="name" class="form-10p__input" required=""></label>
+										<label class="form-10p__icon"><input type="tel" class="form-10p__input" required=""></label>
+										<input type="submit" class="form-10p__btn btn" value="Чекаю дзвінка">
+									</div>
 								</div>
-								<p class="form-10p__text col">
-									Передзвонимо Вам вже через 5 хвилин
-								</p>
+								<div class="form-10p__text col">
+									<smal class="form-10p__call-you">Передзвонимо Вам вже через 5 хвилин</smal>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -153,19 +166,34 @@
 					<div class="container">
 						<div class="row">
 							<div class="col">
-								<h1 class="stainless-advateges__title">Чому саме нержавійка</h1>
+								<h1 class="stainless-advateges__title">Чому саме <span class="accent-text">нержавійка</span></h1>
 								<ul class="stainless-advantages__list">
-									<li class="stainless-advateges__item"></li>
-									<li class="stainless-advateges__item"></li>
-									<li class="stainless-advateges__item"></li>
-									<li class="stainless-advateges__item"></li>
-									<li class="stainless-advateges__item"></li>
-									<li class="stainless-advateges__item"></li>
+									<li class="stainless-advantages__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="stainless-advantages__content">
+											<b class="accent-text">Економія коштів</b> Нержавіюча сталь не потребує періодичної реставрації на противагу виробам з чорного металу
+										</p>
+									</li>
+									<li class="stainless-advantages__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+									</li>
+									<li class="stainless-advantages__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+									</li>
+									<li class="stainless-advantages__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+									</li>
+									<li class="stainless-advantages__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+									</li>
+									<li class="stainless-advantages__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+									</li>
 								</ul>
-								<div class="stainless-advateges__callback callback">
+								<div class="stainless-advantages__callback callback">
 									<div class="callback__wrapper">
 										<div class="callback__content">
-											<p class="callback__text">Отримайте консультацію експерта <br> компанії Decor Metal</p>
+											<p class="callback__text">Отримайте консультацію експерта<br> компанії Decor Metal</p>
 											<button class="callback__btn btn">Отримати консультацію</button>
 										</div>
 									</div>
@@ -174,13 +202,193 @@
 						</div>
 					</div>
 				</section>
-			</main>
-		</div>
-		<div id="my-footer">
+				<section class="galery">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<b class="galery__title">Наші <span class="accent-text">останні роботи</span></b>
+								<ul class="galery__list">
+									<li class="galery__item"></li>
+									<li class="galery__item"></li>
+									<li class="galery__item"></li>
+									<li class="galery__item"></li>
+									<li class="galery__item"></li>
+									<li class="galery__item"></li>
+									<li class="galery__item"></li>
+									<li class="galery__item"></li>
+								</ul>
+								<div class=galery__callback callback">
+									<div class="callback__wrapper">
+										<div class="callback__content">
+											<p class="callback__text">Отримайте консультацію експерта<br> компанії Decor Metal</p>
+											<button class="callback__btn btn">Отримати консультацію</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="problems">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<b class="problems__title"><span class="accent-text">80% наших клієнтів</span> стикались з такими проблемами</b>
+								<ul class="problems__list">
+									<li class="problems__item"></li>
+									<li class="problems__item"></li>
+									<li class="problems__item"></li>
+									<li class="problems__item"></li>
+									<li class="problems__item"></li>
+									<li class="problems__item"></li>
+									<li class="problems__item"></li>
+									<li class="problems__item"></li>
+								</ul>
+								<div class=problems__callback callback">
+									<div class="callback__wrapper">
+										<div class="callback__content">
+											<p class="callback__text">Отримайте консультацію експерта<br> компанії Decor Metal</p>
+											<button class="callback__btn btn">Отримати консультацію</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="benefits">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<b class="benefits__title">Чому вигідно та безпечно <span class="accent-text">з нами</span></b>
+								<ul class="benefits__list">
+									<li class="benefits__item"></li>
+									<li class="benefits__item"></li>
+									<li class="benefits__item"></li>
+									<li class="benefits__item"></li>
+									<li class="benefits__item"></li>
+									<li class="benefits__item"></li>
+									<li class="benefits__item"></li>
+									<li class="benefits__item"></li>
+								</ul>
+								<div class=benefits__callback callback">
+									<div class="callback__wrapper">
+										<div class="callback__content">
+											<p class="callback__text">Отримайте консультацію експерта<br> компанії Decor Metal</p>
+											<button class="callback__btn btn">Отримати консультацію</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="reviews">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<b class="reviews__title"><span class="accent-text">Відгуки</span> наших клієнтів</b>
+							</div>
+						</div>
+					</div>
+					<ul class="reviews__list reviews__corousel owl-carousel">
+						<div class="reviews__item">
+							<p>
+								Вдячний компанії за професіоналізм - приїхали, проконсультували, допомогли зрозуміти як зробити красиво і економно. Пройшло 10 днів і мої перила готові. Так тримати :) Дякую!
+							</p>
+						</div>
+						<div class="reviews__item">
+							<p>
+								Вдячний компанії за професіоналізм - приїхали, проконсультували, допомогли зрозуміти як зробити красиво і економно. Пройшло 10 днів і мої перила готові. Так тримати :) Дякую!
+							</p>
+						</div>
+						<div class="reviews__item">
+							<p>
+								Вдячний компанії за професіоналізм - приїхали, проконсультували, допомогли зрозуміти як зробити красиво і економно. Пройшло 10 днів і мої перила готові. Так тримати :) Дякую!
+							</p>
+						</div>
 
-		</div>
+					</ul>
+					<div class=reviews__callback callback">
+						<div class="callback__wrapper">
+							<div class="callback__content">
+								<p class="callback__text">Оцініть роботу команди <br> <span class="logo__img">DecorMetal</span></p>
+								<button class="callback__btn btn">Залишити відгук</button>
+							</div>
+						</div>	
+					</div>
+				</section>
+				<section class="company">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<h1 class="company__title">Компанія <span class="accent-text"><span class="logo__img">Decor Metal</span> - це</span></h1>
+								<ul class="company__list">
+									<li class="company__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="company__accent-text">10 років</p>
+										<p class="company__content"><span class="accent-text">Більше 10 років</span><br>на ринку</p>
+									</li>
+									<li class="company__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="company__accent-text">950</p>
+										<p class="company__content">Більше 950 <span class="accent-text">задоволених клієнтів</span></p>
+									</li>
+									<li class="company__item">
+										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="company__accent-text">5 років</p>
+										<p class="company__content"><span class="accent-text">5 років гарантії</span><br>на наші вироби</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="feedback">
+					<div class="container">
+						<div class="row">
+							<col>
+							<b class="feedback__title">
+								Зв'яжіться з нами зручним для Вас способом
+							</b>
+						</col>
+						<div class="col-7">
+							<form action="###" method="POST" class="feedback__form">
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 	</div>
-<div class="test"></div>
+	<div id="my-footer">
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="main-footer__logo logo col-7">
+						<span class="logo__img">DecorMetal</span>
+						<p class="logo__promo"><span class="logo__wrap">ВИРОБНИЦТВО ТА ВСТАНОВЛЕННЯ</span> 
+						виробів з нержавіючої сталі по Західній Україні</p>
+					</div>
+					<div class="main-footer__phonebox col-5">
+						<p class="main-footer__phone-items">
+							+38(097) 384-98-02 <br>
+							+38(050) 966 88 36
+						</p>
+						<button class="btn main-footer__btn" type="button" value="Передзвоніть мені" name="callback">Передзвоніть мені</button>
+					</div>
+				</div>
+			</div>
+			<div class="hexagon">
+				<div class="hexTop"></div>
+				<div class="hexBottom"></div>
+			</div>
+		</footer>
+	</div>
+
+
+
 	<script src="js/scripts.min.js"></script>
 
 </body>
