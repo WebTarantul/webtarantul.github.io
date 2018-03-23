@@ -1,8 +1,10 @@
-$(function() {
 
+
+$(function() {
+	
       $("#my-menu").mmenu({
-      	"pageScroll": true,
-      
+         "pageScroll": true,
+         		
           extensions: [
           "fx-listitems-drop",
           "pagedim-white",
@@ -10,15 +12,26 @@ $(function() {
           ],
           navbar: {
     title: '<span class="logo__img--favicon">D</span>'
-  }
+  				}
       });
-      var API = $("#my-menu").data( "mmenu" );
-      API.bind('open', function(){
-      	$('.hamburger').addClass('is-active');
-      }).bind('closed', function(){
-      	$('.hamburger').removeClass('is-active');
-      	$('.main-nav__item.mm-selected').removeClass('mm-selected');
-      })
+
+
+var api = $("#my-menu").data("mmenu");
+
+api.bind('open:finish', function() {
+$('.hamburger').addClass('is-active');
+});
+api.bind('close:finish', function() {
+$('.hamburger').removeClass('is-active');
+$('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
+});
+
+$.mmenu.configuration.classNames.fixedElements = {
+   fixed: "Fixed",
+   sticky: "Sticky"
+};
+
+
 
   $('.reviews__corousel').owlCarousel({
   	loop: true,

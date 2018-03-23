@@ -70,15 +70,7 @@ body
 #my-menu 
     background-color: $grau
     
-.mm-menu   
-	width: 350px !important   
 
-html.mm-opening .mm-slideout
-	-webkit-transform: translate(350px, 0) !important
-  -moz-transform: translate(350px, 0) !important
-  -ms-transform: translate(350px, 0) !important
-  -o-transform: translate(350px, 0) !important
-  transform: translate(350px, 0) !important
 .hamburger.hamburger--stand
 	appearance: none
 .hamburger
@@ -112,10 +104,17 @@ html.mm-opening .mm-slideout
 .mm-panels>.mm-panel.mm-hasnavbar
 	padding-left: 20px
 	padding-top: 0
+
 .mm-menu .mm-selected a,
 .mm-listview>li:hover
 	color: $accent
 	transition: color 0.25s ease
+[class*=mm-menu_fx-listitems-] .mm-listitem:nth-child(1),
+[class*=mm-menu_fx-listitems-] .mm-listitem:nth-child(2),
+[class*=mm-menu_fx-listitems-] .mm-listitem:nth-child(3),
+[class*=mm-menu_fx-listitems-] .mm-listitem:nth-child(4),
+[class*=mm-menu_fx-listitems-] .mm-listitem:nth-child(5)
+	transition-delay: .01s
 .mm-menu .mm-listview>li.mm-selected>a:not(.mm-next), .mm-menu .mm-listview>li.mm-selected>span
 	background: none
 panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
@@ -205,9 +204,9 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	width: 193px
 	font-size: 11px
 	text-align: center
+	margin: auto
 	margin-top: 10px
 	margin-bottom: 0
-	margin: auto
 	.logo__wrap
 		white-space: nowrap
 
@@ -349,13 +348,16 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	color: $black
 .main-header__buttons
 	display: flex
-	width: 330px
+	width: 100%
 	justify-content: space-between
 	margin: auto
 	margin-top: 40px
+.main-header__button
+	margin: auto
 .main-header__btn-more
 	background: $accent
 	color: #fff
+	margin-right: 30px
 	&:hover
 		color: #fff
 		background-color: $light
@@ -365,7 +367,8 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	padding-bottom: 50px
 	text-align: center
 	background-color: rgba(17, 34, 34, .07)
-	
+	.accent-text
+		white-space: nowrap	
 	.logo__img
 			border: none
 
@@ -382,15 +385,16 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	flex-wrap: wrap
 	flex-shrink: 0
 	position: relative
+	margin-bottom: 0
 
 .company__item
 	width: 252px
-	min-height: 340px
 	margin: auto
 	margin-top: 10px
+	margin-bottom: 10px
 	position: relative
 	.hexagon
-		left: 5px
+		left: 8px
 .company__accent-text
 	font-size: 40px
 	color: #fff
@@ -423,6 +427,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 
 	.form-10p__btn
 		background-color: $accent
+		margin-right: auto
 	.form-10p__btn:hover
 		color: $grau
 .form-10p__input,
@@ -446,15 +451,21 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	margin: 0
 	position: relative
 	line-height: 16px
+	margin-left: auto
+	&:nth-child(2)
+		margin-left: 100px
+		margin-right: 100px
 	
 .form-10p__icon:before
-	content: "\f095"
 	position: absolute
 	top: 8px
 	right: 5px
 	font-family: fontawesome
 	display: block
-
+.form-10p__icon--name:before
+	content: "\f2bd"
+.form-10p__icon--phone:before
+	content: "\f095"
 .form-10p__text
 	font-size: 16px
 	line-height: 18px
@@ -464,12 +475,15 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 .form-10p__call-you
 	position: relative
 	padding-left: 25px
+	text-align: center
+	
 	&::before
-		content: "\f095"
+		content: "\f017"
 		position: absolute
-		top: 0px
-		left: 0px
+		top: 2px
+		left: -2px
 		font-family: fontawesome
+		font-size: 25px
 		display: block
 
 		
@@ -532,13 +546,24 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	display: flex
 	flex-wrap: wrap
 	flex-shrink: 0
-
+	position: relative
+	
+	&:before
+		content: ""
+		width: 1.5px
+		height: 95%
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-image: linear-gradient(transparent, $grau, $grau, transparent)
+		display: none
 .stainless-advantages__item
 	width: 252px
-	min-height: 340px
 	position: relative
 	margin: auto
-	margin-top: 10px
+	margin-top: 20px
+	margin-bottom: 20px
 	.hexagon
 		background-image: none
 		background-size: auto
@@ -653,7 +678,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	
 
 .feedback__form
-	width: 335px
+	max-width: 320px
 	min-height: 490px
 	background: #999
 	margin: auto
@@ -671,8 +696,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 
 .main-footer__phone-items,
 .main-footer__btn,
-.logo__img,
-.logo__promo
+.logo__img
 	margin: auto
 
 //owl-carousel

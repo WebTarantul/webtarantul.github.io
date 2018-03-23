@@ -32,18 +32,18 @@
 			<header class="main-header">
 				<div class="container">
 					<div class="main-header__topline row">
-						<a class="hamburger hamburger--stand" id="my-icon" href="#my-menu" type="button" aria-label="Menu" aria-controls="navigation">
+						<a class="Fixed hamburger hamburger--stand" id="my-icon" href="#my-menu" type="button" aria-label="Menu" aria-controls="navigation">
 							<span class="hamburger-box">
 								<span class="hamburger-inner"></span>
 							</span>
 						</a>
 						<nav class="main-nav" id="my-menu">
 							<ul class="main-nav__box">
-								<li class="main-nav__item main-nav__item--home"><a href="#">Головна</a></li>
-								<li class="main-nav__item main-nav__item--company"><a href="#my-footer">Про компанію</a></li>
+								<li class="main-nav__item main-nav__item--home"><a href="#my-page">Головна</a></li>
+								<li class="main-nav__item main-nav__item--company"><a href="#company">Про компанію</a></li>
 								<li class="main-nav__item main-nav__item--works"><a href="#">Наші роботи</a></li>
 								<li class="main-nav__item main-nav__item--reviews"><a href="#">Відгуки</a></li>
-								<li class="main-nav__item main-nav__item--contacts"><a href="#">Контакти</a></li>
+								<li class="main-nav__item main-nav__item--contacts"><a href="#my-footer">Контакти</a></li>
 							</ul>
 						</nav>
 						<div class="main-header__logo logo col-12 col-sm-auto">
@@ -97,8 +97,8 @@
 								<!-- .features -->
 								<b class="main-header__utp"><span class="main-header__utp--sm-hidden">Професійне</span> виконання замовлення <span class="main-header__utp--sm-hidden">всього</span> за 7 днів</b>
 								<div class="main-header__buttons">
-									<a class="main-header__btn-more btn" href="#">Детальніше</a>
-									<button class="main-header__btn-price btn" type="button">Отримати прайс</button>
+									<a class="main-header__button main-header__btn-more btn" href="#">Детальніше</a>
+									<button class="main-header__button main-header__btn-price btn" type="button">Отримати прайс</button>
 								</div>
 							</div>							
 						</div>
@@ -113,7 +113,7 @@
 
 		<div id="my-content">
 			<main class="main-content">
-				<section class="company">
+				<section class="company" id="company">
 					<div class="container">
 						<div class="row">
 							<div class="col">
@@ -150,8 +150,8 @@
 								</p>
 								<div class="col-12">
 									<div class="form-10p__input-wrapper">
-										<label class="form-10p__icon"><input type="name" class="form-10p__input" required=""></label>
-										<label class="form-10p__icon"><input type="tel" class="form-10p__input" required=""></label>
+										<label class="form-10p__icon form-10p__icon--name"><input type="name" class="form-10p__input" required=""></label>
+										<label class="form-10p__icon form-10p__icon--phone"><input type="tel" class="form-10p__input" required=""></label>
 										<input type="submit" class="form-10p__btn btn" value="Чекаю дзвінка">
 									</div>
 								</div>
@@ -164,8 +164,8 @@
 				</section>
 				<section class="stainless-advantages">
 					<div class="container">
-						<div class="row">
-							<div class="col">
+						<div class="row justify-content-center">
+							<div class="col col-lg-10 ">
 								<h1 class="stainless-advateges__title">Чому саме <span class="accent-text">нержавійка</span></h1>
 								<ul class="stainless-advantages__list">
 									<li class="stainless-advantages__item">
@@ -176,18 +176,38 @@
 									</li>
 									<li class="stainless-advantages__item">
 										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="stainless-advantages__content">
+											<b class="accent-text">Довговічність</b>
+											Термін служби виробів з нержавійки без втрати властивостей десятки років
+										</p>
 									</li>
 									<li class="stainless-advantages__item">
 										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="stainless-advantages__content">
+											<b class="accent-text">Естетичність</b>
+											Один з найкрасивіших матеріалів, що надасть витонченості в любому місці
+										</p>
 									</li>
 									<li class="stainless-advantages__item">
 										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="stainless-advantages__content">
+											<b class="accent-text">Корозійна стійкість</b>
+											Вироби з нержавійки протистоять звичайним впливам навколишнього серидовища, таким як дощ, сніг та різним факторам забруднення
+										</p>
 									</li>
 									<li class="stainless-advantages__item">
 										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="stainless-advantages__content">
+											<b class="accent-text">Підвищена жаростійкість</b>
+											Нержавіюча сталь більш тугоплавка в порівнянні з вуглецевою. Це розширяє сферу її використання
+										</p>
 									</li>
 									<li class="stainless-advantages__item">
 										<div class="hexagon"><div class="hexTop"></div><div class="hexBottom"></div></div>
+										<p class="stainless-advantages__content">
+											<b class="accent-text">Висока міцність</b>
+											Що дозволяє створювати надміцні конструкції
+										</p>
 									</li>
 								</ul>
 								<div class="stainless-advantages__callback callback">
@@ -271,7 +291,7 @@
 									<li class="benefits__item"></li>
 									<li class="benefits__item"></li>
 								</ul>
-								<div class=benefits__callback callback">
+								<div class="benefits__callback callback">
 									<div class="callback__wrapper">
 										<div class="callback__content">
 											<p class="callback__text">Отримайте консультацію експерта<br> компанії Decor Metal</p>
@@ -366,12 +386,12 @@
 		<footer class="main-footer">
 			<div class="container">
 				<div class="row">
-					<div class="main-footer__logo logo col-7">
+					<div class="main-footer__logo logo col-12 col-md-7">
 						<span class="logo__img">DecorMetal</span>
 						<p class="logo__promo"><span class="logo__wrap">ВИРОБНИЦТВО ТА ВСТАНОВЛЕННЯ</span> 
 						виробів з нержавіючої сталі по Західній Україні</p>
 					</div>
-					<div class="main-footer__phonebox col-5">
+					<div class="main-footer__phonebox col-12 col-md-5">
 						<p class="main-footer__phone-items">
 							+38(097) 384-98-02 <br>
 							+38(050) 966 88 36
@@ -386,8 +406,6 @@
 			</div>
 		</footer>
 	</div>
-
-
 
 	<script src="js/scripts.min.js"></script>
 
