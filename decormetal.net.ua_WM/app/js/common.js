@@ -26,10 +26,7 @@ $('.hamburger').removeClass('is-active');
 $('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
 });
 
-$.mmenu.configuration.classNames.fixedElements = {
-   fixed: "Fixed",
-   sticky: "Sticky"
-};
+
 
 
 
