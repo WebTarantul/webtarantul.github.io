@@ -35,6 +35,7 @@ $('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
   	smartSpeed: 700,
   	nav: true,
   	autoplay: true,
+  	autoplayHoverPause: true,
   	responsiveClass:true,
     responsive:{
         0:{

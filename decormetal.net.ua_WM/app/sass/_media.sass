@@ -33,6 +33,14 @@
 	.stainless-advantages__list
 		&:before
 			display: block
+
+			//reviews
+	.reviews__list
+		margin-top: 20px
+	.reviews__item
+		padding: 20px
+		p
+			margin: 20px 100px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767.98px)
 	/**/
@@ -55,6 +63,22 @@
 		margin-top: 20px
 	.form-10p__input
 		width: 100%
+	//reviews
+	.reviews__list
+		margin-top: 0
+	.reviews__item
+		padding: 20px
+		p
+			margin: auto
+	.reviews__review
+		&:before
+			left: 0
+			font-size: 60px
+		&:after
+			right: 0
+			top: 55px
+			font-size: 60px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575.98px)
 	
@@ -131,6 +155,14 @@
 	//stainless-advantages
 	.stainless-advantages__list
 		&:before
+			display: none
+
+		//reviews
+	.reviews__review
+		font-size: 14px
+		&:before
+			display: none
+		&:after
 			display: none
 /*==========  Mobile First  ==========*/
 

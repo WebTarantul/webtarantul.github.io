@@ -766,27 +766,27 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 			top: 0
 			left: 0
 	&:nth-child(1):before
-		background-image: url(../img/adwantages-stainless/econom.png)
+		background-image: url(../img/problems/vremya.png)
 	&:nth-child(2):before
-		background-image: url(../img/adwantages-stainless/4.png)
+		background-image: url(../img/problems/pohana_truba.png)
 	&:nth-child(3):before
-		background-image: url(../img/adwantages-stainless/estetic.png)
+		background-image: url(../img/problems/treschina.png)
 	&:nth-child(4):before
-		background-image: url(../img/adwantages-stainless/koroziyna_st.png)
+		background-image: url(../img/problems/peryla_rozshatani.png)
 	&:nth-child(5):before
-		background-image: url(../img/adwantages-stainless/jarostiykist.png)
+		background-image: url(../img/problems/NE_HARCHOVA_TRUBA.png)
 	&:nth-child(6):before
-		background-image: url(../img/adwantages-stainless/micnist.png)
+		background-image: url(../img/problems/pohana_truba.png)
 	.hexagon
-		position: relative
-		margin: auto
+		left: 50%
+		transform: translateX(-50%)
 .problems__content
 	margin: 0
 	font-size: 18px
 	line-height: 22px
 	position: relative
 	z-index: 2
-	margin-top: 126px
+	margin-top: 251px
 	padding-top: 50px
 	&:after
 		content: ""
@@ -819,7 +819,10 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	padding-top: 50px
 	padding-bottom: 50px
 	text-align: center
-	
+	background: rgba(17,34,34,.07)
+	&__title
+		font-size: 1.5em
+		line-height: 1.65
 .benefits__list
 	display: flex
 	flex-wrap: wrap
@@ -833,8 +836,8 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	margin-bottom: 20px
 	position: relative
 	.hexagon
-		position: relative
-		margin: auto
+		left: 50%
+		transform: translateX(-50%)
 	&::before
 			content: ""
 			width: 210px
@@ -848,7 +851,17 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 			top: 0
 			left: 0
 	&:nth-child(1):before
-		background-image: url(../img/adwantages-stainless/econom.png)
+		background-image: url(../img/benefits/shvidko.png)
+	&:nth-child(2):before
+		background-image: url(../img/benefits/sertyfikovana_truba.png)
+	&:nth-child(3):before
+		background-image: url(../img/benefits/nadiyno.png)
+	&:nth-child(4):before
+		background-image: url(../img/benefits/poruchya.png)
+	&:nth-child(5):before
+		background-image: url(../img/benefits/eco.png)
+	&:nth-child(6):before
+		background-image: url(../img/benefits/dosvid.png)
 
 .benefits__content
 	margin: 0
@@ -856,7 +869,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	line-height: 22px
 	position: relative
 	z-index: 2
-	margin-top: 126px
+	margin-top: 251px
 	padding-top: 50px
 	&:after
 		content: ""
@@ -888,16 +901,49 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
  
 .reviews
 	text-align: center
-	
-	
-.reviews__list
-	
+	padding-top: 50px
+	padding-bottom: 50px
+	&__title
+		font-size: 1.5em
+		line-height: 1.65
 
+.reviews__list
+	margin-top: 40px
 
 .reviews__item
+	padding: 20px
 	p
-		margin: 0px 150px
-	&::before,::after
+		margin: 20px 150px
+	
+.reviews__review
+	position: relative
+	&:before
+		content: ",,"
+		width: 30px
+		height: 30px
+		color: $accent
+		font-size: 70px
+		font-family: 'Times New Roman',serif
+		position: absolute
+		top: 44px
+		left: -34px
+		transform: rotate(180deg)
+	&:after
+		content: ",,"
+		width: 30px
+		height: 30px
+		color: $accent
+		font-size: 70px
+		font-family: 'Times New Roman',serif
+		position: absolute
+		top: 44px
+		right: -34px	
+
+.reviews__foto
+	margin-bottom: 50px
+	.hexagon-review
+		left: 50%
+		transform: translateX(-50%)
 
 .reviews__callback
 	margin-top: 40px
@@ -905,19 +951,38 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 		border: none
 	.callback__btn
 		top: -22px
-
+.feedback
+	background: url("../img/header/fon-header_1.jpg") #B8CACE
+	background-repeat: no-repeat
+	background-position: center
+	background-attachment: fixed
+	background-size: auto
+	padding: 50px 0 
+	padding-bottom: 200px
+	position: relative
+	
 .feedback__title
 	text-align: center
-	
+	display: block
+	width: 100%
+	font-size: 1.5em
+	line-height: 1.65
 
 .feedback__form
-	max-width: 320px
+	width: 320px
 	min-height: 490px
 	background: #999
 	margin: auto
 
 .main-footer
-
+	position: absolute
+	bottom: 0
+	left: 0
+	background-color: hsla(0, 1%, 24%, .75)
+	width: 100%
+	color: #fff
+	padding: 20px 0
+	
 	&__logo,
 	&__phonebox
 		display: flex
@@ -942,7 +1007,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 .owl-dots
 	width: 100%
 	text-align: center
-	margin-top: 60px
+	margin-top: 0
 	.owl-dot
 		width: 8px
 		height: 8px
