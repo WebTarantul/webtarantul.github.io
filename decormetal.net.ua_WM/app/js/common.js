@@ -3,8 +3,7 @@
 $(function() {
 	
       $("#my-menu").mmenu({
-         "pageScroll": true,
-         		
+         "pageScroll": true,	
           extensions: [
           "fx-listitems-drop",
           "pagedim-white",
@@ -25,8 +24,6 @@ api.bind('close:finish', function() {
 $('.hamburger').removeClass('is-active');
 $('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
 });
-
-
 
 
 

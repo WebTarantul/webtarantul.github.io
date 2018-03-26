@@ -611,6 +611,8 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	.accent-text
 		display: block
 		font-size: 20px
+		line-height: 24px
+		margin-bottom: 10px
 
 .stainless-advantages__callback
 	margin-top: 40px		
@@ -967,13 +969,73 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	width: 100%
 	font-size: 1.5em
 	line-height: 1.65
+	margin-bottom: 40px
 
 .feedback__form
-	width: 320px
 	min-height: 490px
-	background: #999
+	background: hsla(0, 1%, 24%, .75)
 	margin: auto
-
+	padding: 20px 30px 20px 30px
+	outline: 2px $accent dashed
+	outline-offset: -10px
+	label,input
+		width: 100%
+		margin: 0
+	.form__name-wrapper,
+	.form__tel-wrapper,
+	.form__email-wrapper
+		font-size: 16px
+		position: absolute
+		left: 0
+		padding-left: 30px
+		margin-top: 7px
+		color: #fff
+		transition: color 0.3s
+	input:not(.form__btn)
+		margin-top: 30px
+		padding-left: 15px
+		padding-right: 15px
+		font-size: 16px
+		line-height: 22px
+		padding-top: 5px
+		padding-bottom: 5px
+	.form__name,
+	.form__tel,
+	.form__email
+		box-sizing: border-box
+		background: hsla(0, 1%, 24%, .95)
+		border: 1px solid $accent
+		color: #fff
+		border-radius: 3px
+	.form__btn
+		margin-top: 15px
+		background: $accent
+		color: #fff
+		&:hover
+			color: $grau
+.form__name:focus ~ label.form__name-wrapper
+	color: $accent
+.form__tel:focus ~ label.form__tel-wrapper
+	color: $accent
+.form__email:focus ~ label.form__email-wrapper
+	color: $accent
+.form__promo
+	color: #fff
+	text-align: center
+	font-size: 16px
+	margin: 0
+	.accent-text
+		display: block
+		font-size: 20px
+.form__footer
+	font-size: 14px
+	text-align: center
+	margin: 0
+	padding: 0
+	margin-top: 20px
+	color: $grau
+		/* style */	
+	//	footer
 .main-footer
 	position: absolute
 	bottom: 0

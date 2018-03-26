@@ -32,7 +32,7 @@
 			<header class="main-header">
 				<div class="container">
 					<div class="main-header__topline row">
-						<a class="hamburger hamburger--stand" id="my-icon" href="#my-menu" type="button" aria-label="Menu" aria-controls="navigation">
+						<a class="hamburger hamburger--stand fix" id="my-icon" href="#my-menu" type="button" aria-label="Menu" aria-controls="navigation">
 							<span class="hamburger-box">
 								<span class="hamburger-inner"></span>
 							</span>
@@ -478,8 +478,15 @@
 															</b>
 														</col>
 														<div class="col-7">
-															<form action="###" method="POST" class="feedback__form">
-
+															<form action="###" method="POST" class="feedback__form form-page col-8">
+																<p class="form__promo"><span class="accent-text">Задайте запитання</span> і ми відповімо на нього якомога швидше</p>
+																<input type="name" class="form__name" id="form__name" required="" name="name"><label class="form__name-wrapper" for="form__name">Ваше ім'я</label>
+																<input type="tel" class="form__tel" id="form__tel" required="" name="telephone"><label class="form__tel-wrapper" for="form__tel">Ваш телефон</label>
+																<input type="email" class="form__email" id="form__email" name="email"><label class="form__email-wrapper" for="form__email">Ваш e-mail</label>
+																<input type="submit" class="form__btn btn" value="Чекаю дзвінка">
+																<footer class="form__footer">
+																	Або зателефонуйте за номером <br>+38 (097) 384 98 02 <br>+38 (050) 966 88 36
+																</footer>
 															</form>
 														</div>
 													</div>
