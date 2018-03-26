@@ -29,7 +29,9 @@ body
 			&:required:valid
 				border-color: green
 
-.inverse
+.mm-page
+	position: relative
+	
 
 
 .visually-hidden
@@ -73,14 +75,14 @@ body
 
 .hamburger.hamburger--stand
 	appearance: none
-.hamburger
+.hamburger__menu
 	position: fixed
 	top: 15px
 	left: 0
 	z-index: 100
 .logo__img--favicon
 	display: block
-	width: 80px
+
 	height: 80px
 	border: $accent 2px dotted
 	font-family: marckscript
@@ -971,8 +973,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	line-height: 1.65
 	margin-bottom: 40px
 
-.feedback__form
-	
+.form
 	background: hsla(0, 1%, 24%, .75)
 	margin: auto
 	padding: 20px 30px 20px 30px
@@ -1084,5 +1085,46 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 			background-color: $accent
 			transform: scale(1.3)
 			border: none
-			
+
+
+		//	modal windows
+.overley
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	background: rgba(0, 0, 0, 0.8)
+	z-index: 101
+	display: none
+
+.modal-form
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	margin: auto
+	z-index: 102
+	display: none
+	background:  rgba(62,61,61,.85)
+	background-repeat: no-repeat
+	background-size: 50%
+	background-position: bottom left
+	opacity: 0
+	
+	.modal-form__btn
+		position: absolute
+		top: 8px
+		right: -3px
+		z-index: 100
+.modal-form__form
+	margin-top: 100px
+.modal-show
+	display: block
+	animation: zoomIn 0.6s
+	opacity: 1
+
+
+
 @import "media" // Always at the end

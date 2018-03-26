@@ -10,7 +10,7 @@ $(function() {
           "fx-menu-slide"
           ],
           navbar: {
-    title: '<span class="logo__img--favicon">D</span>'
+    title: '<span class="logo__img--favicon">DM</span>'
   				}
       });
 
@@ -32,7 +32,6 @@ $('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
   	smartSpeed: 700,
   	nav: true,
   	autoplay: true,
-  	autoplayHoverPause: true,
   	responsiveClass:true,
     responsive:{
         0:{
@@ -51,7 +50,24 @@ $('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
     }
   	
   });
+ 
 
 });
 
 
+ $(document).ready(function(){
+	var link = document.querySelector(".main-footer__btn,.callback__btn");
+ 	var modal = document.querySelector(".modal-form");
+ 	var close_btn = document.querySelector(".modal-form__btn");
+
+link.addEventListener("click", function(event) {
+event.preventDefault();
+modal.classList.add("modal-show"); 
+});
+
+
+close_btn.addEventListener("click", function(event){
+    event.preventDefault();
+    modal.classList.remove("modal-show");
+});
+});

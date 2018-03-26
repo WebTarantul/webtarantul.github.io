@@ -17,8 +17,8 @@ gulp.task('browser-sync', function() {
 		},
 		notify: false,
 		// open: false,
-		 tunnel: true,
-		 tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
+		 //tunnel: true,
+		 //tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
 	})
 });
 
@@ -37,6 +37,7 @@ gulp.task('js', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/jQuery.mmenu/dist/jquery.mmenu.all.js',
 		'app/libs/owl.carousel/owl.carousel.min.js',
+		'app/libs/fotorama/fotorama.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
