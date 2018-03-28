@@ -68,6 +68,10 @@ $('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
       $( ".modal-form" ).show(500);
       $( ".overley" ).addClass( "o-show" );
     });
+   $( ".main-header__btn-price" ).on( "click", function(){
+      $( ".modal-form" ).show(500);
+      $( ".overley" ).addClass( "o-show" );
+    });
   
 });
 
