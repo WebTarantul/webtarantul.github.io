@@ -35,6 +35,7 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/jquery-ui/jquery-ui.min.js',
 		'app/libs/jQuery.mmenu/dist/jquery.mmenu.all.js',
 		'app/libs/owl.carousel/owl.carousel.min.js',
 		'app/libs/fotorama/fotorama.js',

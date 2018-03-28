@@ -545,6 +545,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 .callback__btn
 	position: relative
 	top: 8px
+	z-index: 2
 //callback кінець	
 
 .stainless-advantages
@@ -1094,9 +1095,11 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	position: fixed
 	top: 0
 	left: 0
-	background: rgba(0, 0, 0, 0.8)
+	background: darken(rgba(62,61,61,.9), 15)
 	z-index: 101
 	display: none
+.o-show
+	display: block
 
 .modal-form
 	position: fixed
@@ -1110,7 +1113,8 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	background-size: 50%
 	background-position: bottom left
 	box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.75)
-	display: flex
+	display: none
+	
 	.modal-form__form
 		width: 350px
 		margin: 0
@@ -1121,13 +1125,15 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 		top: 8px
 		right: -3px
 		z-index: 100
-	&.hidden
-		display: none
+
 .modal-show
-	display: block
+	display: flex
 	animation: zoomIn 0.6s
 	opacity: 1
-
+.modal-none
+	opacity: 0
+	transition: display 0.5s
+	display: none
 
 
 @import "media" // Always at the end

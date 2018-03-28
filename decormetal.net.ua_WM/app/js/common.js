@@ -50,8 +50,25 @@ $('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
     }
   	
   });
-  $('.main-footer__btn').magnificPopup();
 
+  $( ".main-footer__btn" ).on( "click", function(){
+      $( ".modal-form" ).show(500);
+      $( ".overley" ).addClass( "o-show" );
+    });
+  $( ".modal-form__btn" ).on( "click", function(){
+      $( ".modal-form" ).hide(500);
+       $( ".overley" ).removeClass( "o-show" );
+    });
+
+  $( ".callback__btn" ).on( "click", function(){
+      $( ".modal-form" ).show(500);
+      $( ".overley" ).addClass( "o-show" );
+    });
+   $( ".main-header__btn" ).on( "click", function(){
+      $( ".modal-form" ).show(500);
+      $( ".overley" ).addClass( "o-show" );
+    });
+  
 });
 
 
