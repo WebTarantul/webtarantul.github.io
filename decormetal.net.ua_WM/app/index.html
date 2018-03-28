@@ -98,7 +98,7 @@
 								<b class="main-header__utp"><span class="main-header__utp--sm-hidden">Професійне</span> виконання замовлення <span class="main-header__utp--sm-hidden">всього</span> за 7 днів</b>
 								<div class="main-header__buttons">
 									<a class="main-header__button main-header__btn-more btn" href="#">Детальніше</a>
-									<button class="main-header__button main-header__btn-price btn" type="button">Отримати прайс</button>
+									<a class="main-header__button main-header__btn-price btn" type="button" href="#modal-form">Отримати прайс</a>
 								</div>
 							</div>							
 						</div>
@@ -516,7 +516,7 @@
 							+38(097) 384-98-02 <br>
 							+38(050) 966 88 36
 						</p>
-						<button class="btn main-footer__btn" type="button" value="Передзвоніть мені" name="callback">Передзвоніть мені</button>
+						<a class="btn main-footer__btn" href="#modal-form" type="button" value="Передзвоніть мені" name="callback">Передзвоніть мені</a>
 					</div>
 				</div>
 			</div>
@@ -524,34 +524,22 @@
 	</div>
 
 	<div class="overley"></div>	
-	<div class="modal-form">
-		
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 col-sm-8 col-md-6">
-					<form action="###" method="POST" class="modal-form__form form">
-						<button class="hamburger hamburger--collapse modal-form__btn is-active" type="button">
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-		</button>
-						<p class="form__promo"><span class="accent-text">Задайте запитання</span> і ми відповімо на нього якомога швидше</p>
-						<input type="name" class="form__name" id="form__name" required="" name="name"><label class="form__name-wrapper" for="form__name">Ваше ім'я</label>
-						<input type="tel" class="form__tel" id="form__tel" required="" name="telephone"><label class="form__tel-wrapper" for="form__tel">Ваш телефон</label>
-						<input type="email" class="form__email" id="form__email" name="email"><label class="form__email-wrapper" for="form__email">Ваш e-mail</label>
-						<input type="submit" class="form__btn btn" value="Чекаю дзвінка">
-						<footer class="form__footer">
-							Або зателефонуйте за номером <br>+38 (097) 384 98 02 <br>+38 (050) 966 88 36
-						</footer>
-					</form>
-				</div>
-			</div>
-		</div>
-		
-
-
-
-		
+	<div class="modal-form hidden" id="modal-form">
+		<form action="###" method="POST" class="modal-form__form form">
+			<button class="hamburger hamburger--collapse modal-form__btn is-active" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<p class="form__promo"><span class="accent-text">Задайте запитання</span> і ми відповімо на нього якомога швидше</p>
+			<input type="name" class="form__name" id="form__name" required="" name="name"><label class="form__name-wrapper" for="form__name">Ваше ім'я</label>
+			<input type="tel" class="form__tel" id="form__tel" required="" name="telephone"><label class="form__tel-wrapper" for="form__tel">Ваш телефон</label>
+			<input type="email" class="form__email" id="form__email" name="email"><label class="form__email-wrapper" for="form__email">Ваш e-mail</label>
+			<input type="submit" class="form__btn btn" value="Чекаю дзвінка">
+			<footer class="form__footer">
+				Або зателефонуйте за номером <br>+38 (097) 384 98 02 <br>+38 (050) 966 88 36
+			</footer>
+		</form>	
 	</div>
 </div>
 

@@ -1,7 +1,7 @@
 
 
 $(function() {
-	
+
       $("#my-menu").mmenu({
          "pageScroll": true,	
           extensions: [
@@ -50,24 +50,8 @@ $('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
     }
   	
   });
- 
+  $('.main-footer__btn').magnificPopup();
 
 });
 
 
- $(document).ready(function(){
-	var link = document.querySelector(".main-footer__btn,.callback__btn");
- 	var modal = document.querySelector(".modal-form");
- 	var close_btn = document.querySelector(".modal-form__btn");
-
-link.addEventListener("click", function(event) {
-event.preventDefault();
-modal.classList.add("modal-show"); 
-});
-
-
-close_btn.addEventListener("click", function(event){
-    event.preventDefault();
-    modal.classList.remove("modal-show");
-});
-});
