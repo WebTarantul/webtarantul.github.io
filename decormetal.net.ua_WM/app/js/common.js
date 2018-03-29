@@ -1,7 +1,14 @@
 
+$(document).ready(function(){
+    $("#main_header__btn_more").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 700);
 
+    });
+});
 $(function() {
-
       $("#my-menu").mmenu({
          "pageScroll": true,	
           extensions: [
@@ -59,6 +66,11 @@ $('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
       $( ".modal-form" ).hide(500);
        $( ".overley" ).removeClass( "o-show" );
     });
+  $( ".overley" ).on( "click", function(){
+      $( ".modal-form" ).hide(500);
+       $( ".overley" ).removeClass( "o-show" );
+
+    });
 
   $( ".callback__btn" ).on( "click", function(){
       $( ".modal-form" ).show(500);
@@ -72,7 +84,25 @@ $('.main-nav__item.mm-listitem_selected').removeClass('mm-listitem_selected');
       $( ".modal-form" ).show(500);
       $( ".overley" ).addClass( "o-show" );
     });
+   $( ".main-header__link-galery--konsutacia" ).on( "click", function(event){
+   			event.preventDefault();
+      $( ".modal-form" ).show(500);
+      $( ".overley" ).addClass( "o-show" );
+    });
+
+   // FOTORAMA
+  $('.fotorama').fotorama({
+  spinner: {
+    lines: 13,
+    color: '#F4424E'
+  }
+});
   
+  			// функція анімованого переходу до якоря
+$( "#main_header__btn_more" ).on( "click", function(){
+      event.preventDefault();
+       $.scrollport( "#company");
+    });
 });
 
 

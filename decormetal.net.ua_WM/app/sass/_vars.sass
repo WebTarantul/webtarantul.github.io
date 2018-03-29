@@ -3,6 +3,7 @@ $accent: #F4424E
 $light: rgba(255, 68, 68, .8)
 $grau: #a9a9a9
 $black: #202225
+$dark: rgba(62,61,61,.9)
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px
 $grid-columns: 12
@@ -31,3 +32,18 @@ $gutter: $grid-gutter-width
 		left: 0
 		background-color: hsla(0, 1%, 24%, .75)
 		opacity: .80
+		z-index: 0
+
+=inverse-modal-galery()
+	&::before
+		content: ""
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: hsla(0, 1%, 24%, .75)
+		opacity: .80
+		z-index: -1
+
+
