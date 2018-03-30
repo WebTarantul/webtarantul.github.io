@@ -103,6 +103,39 @@ $( "#main_header__btn_more" ).on( "click", function(){
       event.preventDefault();
        $.scrollport( "#company");
     });
+
+//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Дякуємо за заявку. Очікуйте двінка.");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+$('.top').click(function() {
+		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
+	});
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > $(window).height()) {
+			$('.top').addClass("active");
+		} else {
+			$('.top').removeClass("active");
+		};
+	});
+
 });
+$(window).on('load', function() {
+	$('.preloader').delay(1000).fadeOut('slow');
+});
+
 
 

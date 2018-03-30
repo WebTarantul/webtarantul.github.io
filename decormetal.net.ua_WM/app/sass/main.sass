@@ -21,6 +21,7 @@ body
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
+	
 	input, textarea
 			border: #666 1px solid
 			outline: none
@@ -244,6 +245,12 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	font-size: 20px
 	line-height: 22px
 	white-space: nowrap
+	text-decoration: none
+	color: #fff
+	&:hover
+		color: $accent
+		text-decoration: none
+		
 .main-header__promo
 	display: flex
 	height: 100%
@@ -975,6 +982,13 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	padding: 50px 0 
 	padding-bottom: 200px
 	position: relative
+
+.feedback__phone-item
+	text-decoration: none
+	color: #fff
+	&:hover
+		color: $accent
+		text-decoration: none
 	
 .feedback__title
 	text-align: center
@@ -1050,7 +1064,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 		/* style */	
 	//	footer
 .main-footer
-	position: absolute
+	position: relative
 	bottom: 0
 	left: 0
 	background-color: hsla(0, 1%, 24%, .75)
@@ -1071,7 +1085,12 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 .main-footer__btn,
 .logo__img
 	margin: auto
-
+.main-footer__phone-item
+	text-decoration: none
+	color: #fff
+	&:hover
+		color: $accent
+		text-decoration: none
 //owl-carousel
 .owl-carousel .owl-dots.disabled
 	display: block
@@ -1126,7 +1145,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	background-position: bottom left
 	box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.75)
 	display: none
-	
+
 	.modal-form__form
 		width: 350px
 		margin: 0
@@ -1139,6 +1158,13 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 		z-index: 100
 		padding-bottom: 50px
 		padding-left: 50px
+
+.modal-form__phone
+	text-decoration: none
+	color: #fff
+	&:hover
+		color: $accent
+		text-decoration: none
 
 .modal-show
 	display: flex
@@ -1164,7 +1190,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	background: none
 	
 .content-galery__peryla
-	padding-bottom: 190px
+	padding-bottom: 50px
 	padding-top: 0
 	
 	
@@ -1181,6 +1207,7 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	
 .fotorama
 	&__nav
+		display: none
 		&-wrap
 			width: 100%
 			padding: 0 10px
@@ -1211,6 +1238,79 @@ panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
 	height: 32px
 	
 	
+.top
+	position: fixed
+	bottom: 25px
+	background-color: darken(#E0E0E0, 20)
+	border-radius: 10em
+	color: darken(#666, 10)
+	font-size: 26px
+	width: 50px
+	height: 50px
+	line-height: 50px
+	text-align: center
+	cursor: pointer
+	transition: all .25s ease
+	right: -100px
+	z-index: 12
+	opacity: .5
+	&.active
+		right: 30px
+	i
+		line-height: 0
+	&:hover
+		color: #fff
+		background-color: $accent
+		opacity: 1
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: darken(rgba(62,61,61, 1), 10)
+	z-index: 100
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity=$opacity)
+.pulse
+	position: relative
+	left: 50%
+	top: 50vh
+	margin:
+		left: -40px
+		top: -40px
+	&:before, &:after
+		content: ''
+		border: 5px solid lighten(#323232, 20)
+		width: 80px
+		height: 80px
+		border-radius: 500px
+		position: absolute
+	&:before
+		animation: pulse-outer .8s ease-in infinite
+	&:after
+		animation: pulse-inner .8s linear infinite
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	100%
+		@include opacity(0)
+
+@keyframes pulse-inner
+	0%
+		transform: scale(0)
+		@include opacity(0)
+	100%
+		transform: scale(1)
+		@include opacity(100)
+
+.content-galery__fotorama
+	margin-bottom: 220px
 	
 
 @import "media" // Always at the end
