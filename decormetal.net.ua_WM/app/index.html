@@ -34,7 +34,7 @@
 			<header class="main-header">
 				<div class="container">
 					<div class="main-header__topline row">
-						<a class="hamburger hamburger--stand hamburger__menu" id="my-icon" href="#my-menu" type="button" aria-label="Menu" aria-controls="navigation">
+						<a class="hamburger hamburger--stand hamburger__menu" id="my-icon" href="#my-menu" aria-label="Menu">
 							<span class="hamburger-box">
 								<span class="hamburger-inner"></span>
 							</span>
@@ -78,40 +78,58 @@
 								<h1 class="main-header__title"><span class="caps">Виготовлення та встановлення</span> виробів з нержавіючої сталі</h1>
 								<div class="main-header__features features">
 									<ul class="features__items">
-										<a href="peryla.html" class="main-header__link-galery"><li class="features__item">
-											<h6>Перила</h6>
-										</li></a>
-										<a href="vorota.html" class="main-header__link-galery"><li class="features__item">
-											<h6>Брами/ворота</h6>
-										</li></a>
-										<a href="shody.html" class="main-header__link-galery"><li class="features__item">
-											<h6>Сходи</h6>
-										</li></a>
-										<a href="ohoroji.html" class="main-header__link-galery"><li class="features__item">
-											<h6>Огорожі</h6>
-										</li></a>
-										<a href="navisy.html" class="main-header__link-galery"><li class="features__item">
-											<h6>Навіси/дашки</h6>
-										</li></a>
-										<a href="mebli.html" class="main-header__link-galery"><li class="features__item">
-											<h6>Меблі</h6>
-										</li></a>
-										<a href="drabyny.html" class="main-header__link-galery"><li class="features__item">
-											<h6>Драбини</h6>
-										</li></a>
-										<a href="zvarka.html" class="main-header__link-galery"><li class="features__item">
-											<h6>Зварювальні роботи</h6>
-										</li></a>
-										<a href="#" class="main-header__link-galery main-header__link-galery--konsutacia"><li class="features__item">
-											<h6>Консультація</h6>
-										</li></a>
+										<li class="features__item">
+											<a href="peryla.html" class="main-header__link-galery">
+												<h6>Перила</h6>
+											</a>
+										</li>
+										<li class="features__item">
+											<a href="vorota.html" class="main-header__link-galery">
+												<h6>Брами/ворота</h6>
+											</a>
+										</li>
+										<li class="features__item">
+											<a href="shody.html" class="main-header__link-galery">
+												<h6>Сходи</h6>
+											</a>
+										</li>
+										<li class="features__item">
+											<a href="ohoroji.html" class="main-header__link-galery">
+												<h6>Огорожі</h6>
+											</a>
+										</li>
+										<li class="features__item">
+											<a href="navisy.html" class="main-header__link-galery">
+												<h6>Навіси/дашки</h6>
+											</a>
+										</li>
+										<li class="features__item">
+											<a href="mebli.html" class="main-header__link-galery">
+												<h6>Меблі</h6>
+											</a>
+										</li>
+										<li class="features__item">
+											<a href="drabyny.html" class="main-header__link-galery">
+												<h6>Драбини</h6>
+											</a>
+										</li>
+										<li class="features__item">
+											<a href="zvarka.html" class="main-header__link-galery">
+												<h6>Зварювальні роботи</h6>
+											</a>
+										</li>
+										<li class="features__item">
+											<a href="#" class="main-header__link-galery main-header__link-galery--konsutacia">
+												<h6>Консультація</h6>
+											</a>
+										</li>
 									</ul>
 								</div>
 								<!-- .features -->
 								<b class="main-header__utp"><span class="main-header__utp--sm-hidden">Професійне</span> виконання замовлення <span class="main-header__utp--sm-hidden">всього</span> за 7 днів</b>
 								<div class="main-header__buttons">
 									<a class="main-header__button main-header__btn-more btn" id="main_header__btn_more" href="#company">Детальніше</a>
-									<button class="main-header__button main-header__btn-price btn" type="button" href="#modal-form">Отримати прайс</button>
+									<button class="main-header__button main-header__btn-price btn" type="button">Отримати прайс</button>
 								</div>
 							</div>							
 						</div>
@@ -155,12 +173,12 @@
 				<section class="form-10p" id="form-10">
 					<h1 class="visually-hidden">Форма зворотнього звя'зку</h1>
 					<div class="container">
-						<form action="###" class="form-10p__form" method="POST" >
+						<form action="#" class="form-10p__form" method="POST" >
 							<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="DecorMetal">
-		<input type="hidden" name="admin_email" value="decormetal@ukr.net">
-		<input type="hidden" name="form_subject" value="На сайті DecorMetal запонено форму">
-		<!-- END Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="DecorMetal">
+							<input type="hidden" name="admin_email" value="decormetal@ukr.net">
+							<input type="hidden" name="form_subject" value="На сайті DecorMetal запонено форму">
+							<!-- END Hidden Required Fields -->
 							<div class="row">
 								<p class="form-10p__title col-12">
 									<b>Залиште заявку на безкоштовну консультацію <br></b> 
@@ -168,13 +186,13 @@
 								</p>
 								<div class="col-12">
 									<div class="form-10p__input-wrapper">
-										<label class="form-10p__icon form-10p__icon--name"><input type="name" class="form-10p__input" required=""></label>
+										<label class="form-10p__icon form-10p__icon--name"><input type="text" class="form-10p__input" required=""></label>
 										<label class="form-10p__icon form-10p__icon--phone"><input type="tel" class="form-10p__input" required=""></label>
 										<input type="submit" class="form-10p__btn btn" value="Чекаю дзвінка">
 									</div>
 								</div>
 								<div class="form-10p__text col">
-									<smal class="form-10p__call-you">Передзвонимо Вам вже через 5 хвилин</smal>
+									<small class="form-10p__call-you">Передзвонимо Вам вже через 5 хвилин</small>
 								</div>
 							</div>
 						</form>
@@ -434,33 +452,33 @@
 						</div>
 					</div>
 					<ul class="reviews__list reviews__corousel owl-carousel">
-						<div class="reviews__item">
+						<li class="reviews__item">
 							<div class="reviews__foto">
 								<div class="hexagon-review"><div class="hexTop-review"></div><div class="hexBottom-review"></div></div>
 							</div>
 							<p class="reviews__review">
 								Вдячний компанії за професіоналізм - приїхали, проконсультували, допомогли зрозуміти як зробити красиво і економно. Пройшло 10 днів і мої перила готові. Так тримати :) Дякую!
 							</p>
-						</div>
-						<div class="reviews__item">
+						</li>
+						<li class="reviews__item">
 							<div class="reviews__foto">
 								<div class="hexagon-review"><div class="hexTop-review"></div><div class="hexBottom-review"></div></div>
 							</div>
 							<p class="reviews__review">
 								Вдячний компанії за професіоналізм - приїхали, проконсультували, допомогли зрозуміти як зробити красиво і економно. Пройшло 10 днів і мої перила готові. Так тримати :) Дякую!
 							</p>
-						</div>
-						<div class="reviews__item">
+						</li>
+						<li class="reviews__item">
 							<div class="reviews__foto">
 								<div class="hexagon-review"><div class="hexTop-review"></div><div class="hexBottom-review"></div></div>
 							</div>
 							<p class="reviews__review">
 								Вдячний компанії за професіоналізм - приїхали, проконсультували, допомогли зрозуміти як зробити красиво і економно. Пройшло 10 днів і мої перила готові. Так тримати :) Дякую!
 							</p>
-						</div>
+						</li>
 
 					</ul>
-					<div class=reviews__callback callback">
+					<div class="reviews__callback callback">
 						<div class="callback__wrapper">
 							<div class="callback__content">
 								<p class="callback__text">Оцініть роботу команди <br> <span class="logo__img">DecorMetal</span></p>
@@ -498,55 +516,55 @@
 				<section class="feedback">
 					<div class="container">
 						<div class="row">
-							<col>
-							<b class="feedback__title">
-								<span class="accent-text">Зв'яжіться з нами</span> <br>зручним для Вас способом
-							</b>
-						</col>
-						<div class="col-12  col-sm-9 col-md-7 col-lg-6 offset-md-1 col-xl-5 offset-xl-2 offset-lg-2">
-							<form action="#" method="POST" class="feedback__form form">
-								<!-- Hidden Required Fields -->
-								<input type="hidden" name="project_name" value="DecorMetal">
-								<input type="hidden" name="admin_email" value="decormetal@ukr.net">
-								<input type="hidden" name="form_subject" value="На сайті DecorMetal запонено форму">
-								<!-- END Hidden Required Fields -->
-								<p class="form__promo"><span class="accent-text">Задайте запитання</span> і ми відповімо на нього якомога швидше</p>
-								<input type="name" class="form__name" id="form__name" required="" name="name"><label class="form__name-wrapper" for="form__name">Ваше ім'я</label>
-								<input type="tel" class="form__tel" id="form__tel" required="" name="telephone"><label class="form__tel-wrapper" for="form__tel">Ваш телефон</label>
-								<input type="email" class="form__email" id="form__email" name="email"><label class="form__email-wrapper" for="form__email">Ваш e-mail</label>
-								<input type="submit" class="form__btn btn" value="Чекаю дзвінка">
-								<footer class="form__footer">
-									Або зателефонуйте за номером <br><a href="tel:+380973849802" class="feedback__phone-item">+38 (097) 384 98 02</a> <br><a href="tel:+380509668836" class="feedback__phone-item">+38 (050) 966 88 36</a>
-								</footer>
-							</form>
+							<div class="col-12">
+								<b class="feedback__title">
+									<span class="accent-text">Зв'яжіться з нами</span> <br>зручним для Вас способом
+								</b>
+							</div>
+							<div class="col-12  col-sm-9 col-md-7 col-lg-6 offset-md-1 col-xl-5 offset-xl-2 offset-lg-2">
+								<form action="#" method="POST" class="feedback__form form">
+									<!-- Hidden Required Fields -->
+									<input type="hidden" name="project_name" value="DecorMetal">
+									<input type="hidden" name="admin_email" value="decormetal@ukr.net">
+									<input type="hidden" name="form_subject" value="На сайті DecorMetal запонено форму">
+									<!-- END Hidden Required Fields -->
+									<p class="form__promo"><span class="accent-text">Задайте запитання</span> і ми відповімо на нього якомога швидше</p>
+									<input type="text" class="form__name" id="form__name" required="" name="name"><label class="form__name-wrapper" for="form__name">Ваше ім'я</label>
+									<input type="tel" class="form__tel" id="form__tel" required="" name="telephone"><label class="form__tel-wrapper" for="form__tel">Ваш телефон</label>
+									<input type="email" class="form__email" id="form__email" name="email"><label class="form__email-wrapper" for="form__email">Ваш e-mail</label>
+									<input type="submit" class="form__btn btn" value="Чекаю дзвінка">
+									<footer class="form__footer">
+										Або зателефонуйте за номером <br><a href="tel:+380973849802" class="feedback__phone-item">+38 (097) 384 98 02</a> <br><a href="tel:+380509668836" class="feedback__phone-item">+38 (050) 966 88 36</a>
+									</footer>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<div id="my-footer">
+			<footer class="main-footer">
+				<div class="container">
+					<div class="row">
+						<div class="main-footer__logo logo col-12 col-md-7">
+							<span class="logo__img">DecorMetal</span>
+							<h6 class="logo__promo"><span class="logo__wrap">ВИРОБНИЦТВО ТА ВСТАНОВЛЕННЯ</span> 
+							виробів з нержавіючої сталі (нержавійки) по Західній Україні</h6>
+						</div>
+						<div class="main-footer__phonebox col-12 col-md-5">
+							<p class="main-footer__phone-items">
+								<a href="tel:+380973849802" class="main-footer__phone-item">+38(097) 384-98-02</a> <br>
+								<a href="tel:+380509668836" class="main-footer__phone-item">+38(050) 966 88 36</a>
+							</p>
+							<button class="btn main-footer__btn" type="button" value="Передзвоніть мені" name="callback">Передзвоніть мені</button>
 						</div>
 					</div>
 				</div>
-			</section>
-		</main>
-	</div>
-	<div id="my-footer">
-		<footer class="main-footer">
-			<div class="container">
-				<div class="row">
-					<div class="main-footer__logo logo col-12 col-md-7">
-						<span class="logo__img">DecorMetal</span>
-						<h6 class="logo__promo"><span class="logo__wrap">ВИРОБНИЦТВО ТА ВСТАНОВЛЕННЯ</span> 
-						виробів з нержавіючої сталі (нержавійки) по Західній Україні</h6>
-					</div>
-					<div class="main-footer__phonebox col-12 col-md-5">
-						<p class="main-footer__phone-items">
-							<a href="tel:+380973849802" class="main-footer__phone-item">+38(097) 384-98-02</a> <br>
-								<a href="tel:+380509668836" class="main-footer__phone-item">+38(050) 966 88 36</a>
-						</p>
-						<button class="btn main-footer__btn" type="button" value="Передзвоніть мені" name="callback">Передзвоніть мені</button>
-					</div>
-				</div>
-			</div>
-
+			</footer>
 			<a class="overley"></a>	
 			<div class="modal-form" id="modal-form">
-				<form action="###" method="POST" class="modal-form__form form">
+				<form action="#" method="POST" class="modal-form__form form">
 					<button class="hamburger hamburger--collapse modal-form__btn is-active" type="button">
 						<span class="hamburger-box">
 							<span class="hamburger-inner"></span>
@@ -558,9 +576,9 @@
 					<input type="hidden" name="admin_email" value="decormetal@ukr.net">
 					<input type="hidden" name="form_subject" value="На сайті DecorMetal запонено форму">
 					<!-- END Hidden Required Fields -->
-					<input type="name" class="form__name" id="form__name" required="" name="name"><label class="form__name-wrapper" for="form__name">Ваше ім'я</label>
-					<input type="tel" class="form__tel" id="form__tel" required="" name="telephone"><label class="form__tel-wrapper" for="form__tel">Ваш телефон</label>
-					<input type="email" class="form__email" id="form__email" name="email"><label class="form__email-wrapper" for="form__email">Ваш e-mail</label>
+					<input type="text" class="form__name" required="" name="name"><label class="form__name-wrapper" for="form__name">Ваше ім'я</label>
+					<input type="tel" class="form__tel" required="" name="telephone"><label class="form__tel-wrapper" for="form__tel">Ваш телефон</label>
+					<input type="email" class="form__email" name="email"><label class="form__email-wrapper" for="form__email">Ваш e-mail</label>
 					<input type="submit" class="form__btn btn" value="Чекаю дзвінка">
 					<footer class="form__footer">
 						Або зателефонуйте за номером <br><a href="tel:+380973849802" class="modal-form__phone">+38 (097) 384 98 02</a> <br><a href="tel:+380509668836" class="modal-form__phone">+38 (050) 966 88 36</a>
@@ -570,6 +588,6 @@
 		</div>
 		<div class="top" title="Наверх"><i class="fa fa-angle-double-up"></i></div>
 		<script src="js/scripts.min.js"></script>
-
+</div>
 	</body>
 	</html>
