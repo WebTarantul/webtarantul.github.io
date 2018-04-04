@@ -1,0 +1,113 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 17px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+.row
+	flex-direction: row-reverse
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12
+	text-align: right
+	
+.container
+	max-width: 1565px
+.s-header
+	background-image: url(../img/people.jpg)
+	background-repeat: no-repeat
+	background-position: center
+.s-header__name
+	color: #212121
+	font-size: 40px
+	font-weight: 300
+	line-height: 18px
+	padding-top: 100px
+	margin-bottom: 24px
+
+.s-header__text
+
+	color: #666a6f
+	font-size: 17px
+	font-weight: 400
+	line-height: 30px
+	margin-bottom: 30px
+	&:last-child
+		padding-bottom: 50px
+
+.s-header__text--blue
+	color: #00a2fd
+	font-size: 18px
+	font-weight: 400
+	line-height: 30px
+.s-content
+	text-align: center
+	&__name
+
+		color: #00a2fd
+		font-size: 40px
+		font-weight: 300
+		line-height: 18px
+		padding-top: 44px
+		padding-bottom: 27px
+		margin: 0
+	&__descr
+		color: #212121
+
+		font-size: 18px
+		font-weight: 400
+		line-height: 30px
+		padding: 0
+
+.block
+	color: #5c6065
+
+	font-size: 14px
+	font-weight: 400
+	line-height: 20px
+	text-decoration: none
+	margin-top: 83px
+	text-align: center
+	padding-bottom: 176px
+	&:hover
+		text-decoration: none
+		
+.content-item__name
+	color: #00a2fd
+
+	font-size: 18px
+	font-weight: 400
+	line-height: 30px
+	
+@import "media" // Always at the end
