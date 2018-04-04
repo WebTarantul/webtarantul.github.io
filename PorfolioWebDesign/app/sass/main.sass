@@ -1,0 +1,328 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: #9aa0ab
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+.btn
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 15px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 5px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+a
+	&:hover
+		color: $accent
+		transition: all 0.2s
+.accent-text
+	color: $accent
+.main-header
+	background-position: top
+	background-repeat: no-repeat
+	background-size: 100%
+	height: 100vh
+	min-height: 550px
+	&__logo
+		order: 0
+.main-logo__text
+	padding: 43px 14px 14px
+	background: $accent
+	display: inline-block
+	border-radius: 0 0 5px 5px 
+	color: #fff
+.menu__list
+	display: flex
+	justify-content: space-between
+	min-width: 300px
+	padding: 0
+	margin: 0
+.main-header__menu,
+.main-header__social
+	padding-top: 29px
+.main-header__menu
+	order: 1
+	
+.main-header__social
+	display: flex
+	justify-content: space-around
+	order: 2
+.menu__item
+	list-style: none
+.menu__link
+	/* Style for "About" */
+	color: #263742
+	font-family: $mon
+	font-size: 14px
+	font-weight: 400
+	text-transform: uppercase
+.main-header__text
+	margin-top: 29vh
+.main-header__slogan
+	// Style for "intelligen"
+	color: #314a5b
+	font-family: $mon
+	font-size: 48px
+	font-weight: 700
+	line-height: 53px
+	text-transform: uppercase
+.main-header__descr-slogan
+	// Style for "We’re smal"
+	color: $black
+	font-family: $default-font
+	font-size: 20px
+	font-weight: 400
+	padding: 0
+	margin: 0
+	margin-bottom: 41px
+
+// ------------FEATURES-----------
+.features
+	padding-top: 86px
+	&__item
+		list-style: none
+		display: flex
+		flex-direction: column
+	&__title
+		// Style for "Free. Actu"
+		color: #465065
+		font-family: $mon
+		font-size: 26px
+		font-weight: 700
+		line-height: 26px
+		margin: 0
+		padding: 0
+		margin-bottom: 24px
+		text-transform: uppercase
+		
+	&__text
+		// Style for "You’re saf"
+		color: #9aa0ab
+		font-family: $default-font
+		font-size: 15px
+		font-weight: 400
+		line-height: 22px
+		padding: 0
+		margin: 0
+		margin-bottom: 29px
+	&__link
+		margin-top: auto
+		color: $accent
+		position: relative
+		max-width: 65px
+		font-family: $mon
+		font-size: 14px
+		font-weight: 400
+		line-height: 20px
+		text-transform: uppercase
+		&:after
+			content: "\f178"
+			font-family: 'FontAwesome'
+			position: absolute
+			right: 0
+			top: 0
+
+// ------------PORTFOLIO-----------
+.portfolio
+	margin-top: 123px
+	
+	.container
+		background-repeat: no-repeat
+		background-position: 0 -51px
+		background-size: auto
+		
+	&__title
+		color: $black
+		font-family: $mon
+		font-size: 40px
+		font-weight: 700
+		line-height: 46px
+		text-transform: uppercase
+		margin-bottom: 17px
+	&__descr-title
+		color: $black
+		font-family: $default-font
+		font-size: 16px
+		font-weight: 400
+		line-height: 20px
+	&__content
+		padding-bottom: 135px
+	&__text
+		color: #9aa0ab
+		font-family: $default-font
+		font-size: 15px
+		font-weight: 400
+		line-height: 22px
+	&__text-1
+		margin-top: 29px
+	&__link
+		color: $accent
+		position: relative
+		max-width: 65px
+		font-family: $mon
+		font-size: 14px
+		font-weight: 400
+		line-height: 20px
+		text-transform: uppercase
+		&:after
+			content: "\f178"
+			font-family: 'FontAwesome'
+			position: absolute
+			right: -20px
+			top: 0
+
+// -------------OUR--------------
+.our
+	margin-bottom: 62px
+	&__wrapp
+		display: flex
+		flex-direction: column
+		
+	&__item
+		list-style: none
+		display: flex
+		scretch: 0
+	&__title
+		color: $black
+		font-family: $mon
+		font-size: 32px
+		font-weight: 700
+		line-height: 53.86px
+		text-transform: uppercase
+	&__descr
+		color: #9aa0ab
+		font-family: $default-font
+		font-size: 16px
+		font-weight: 400
+		line-height: 20px
+	&__name
+		color: $black
+		font-family: $mon
+		font-size: 22px
+		font-weight: 700
+		line-height: 53.86px
+		text-transform: uppercase
+	&__specialty
+		color: #f0454c
+		font-family: $default-font
+		font-size: 14px
+		font-weight: 400
+		line-height: 20px	
+	&__descr-item
+		color: #9aa0ab
+		font-family: $default-font
+		font-size: 14px
+		font-weight: 400
+		line-height: 20px
+	&__link
+		margin-left: auto
+		padding-right: 20px
+		color: $accent
+		position: relative
+		max-width: 65px
+		font-family: $mon
+		font-size: 14px
+		font-weight: 400
+		line-height: 20px
+		text-transform: uppercase
+		&:after
+			content: "\f178"
+			font-family: 'FontAwesome'
+			position: absolute
+			right: 0px
+			top: 0
+
+// -----------footer---------------
+.main-footer
+	padding: 33px 0 33px
+	border-top: 1px solid
+	border-color: lighten($black, 50)
+.social
+	display: flex
+	justify-content: space-between
+	&__link
+		&:hover
+			text-decoration: none
+			.fa
+				color: $accent
+				transition: all 0.2s
+	.fa
+		color: #b9c0c6
+.copy
+	&__text
+		color: #b9c0c6
+		font-family: $default-font
+		font-size: 13px
+		font-weight: 400
+		line-height: 13px
+			
+
+i
+	color: $accent
+
+	&:hover
+		color: lighten($accent, 5)
+		transition: color 0.2s
+
+b, strong
+	font-weight: bold
+
+
+
+@import "media" // Always at the end

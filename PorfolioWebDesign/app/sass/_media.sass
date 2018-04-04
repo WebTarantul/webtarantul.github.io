@@ -1,0 +1,57 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+	.main-header
+		background-size: cover
+	.main-header__social
+		order: 1
+		margin-left: auto
+	.main-header__menu
+		order: 2
+	.main-header__text
+		margin-top: 30px
+	.main-header__slogan
+		font-size: 31px
+	.menu__link
+		font-weight: 700
+		padding: 5px
+	.menu__list
+		border: 1px solid $accent
+		background-color: hsla(0, 0%, 0%, .1)
+	.menu__item
+		
+	.portfolio
+		margin-top: 53px	
+	.portfolio__content
+		padding-top: 340px
+		padding-bottom: 50px
+	.our__title,.our__descr
+		text-align: center
+		
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
