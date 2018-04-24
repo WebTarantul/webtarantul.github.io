@@ -1,0 +1,113 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 66px;
+  font-family: $font-base;
+
+  &--closed {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 959px) {
+    background-color: $color-secondary;
+    background-image: none;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  border-bottom: 1px solid $color-black;
+  border-top: 1px solid $color-black-opacity;
+  min-height: 65px;
+  text-align: center;
+
+  @media (max-width: 959px) {
+    width: 100%;
+    min-height: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+
+    &:not(:last-of-type) {
+      margin-right: 60px;
+    }
+  }
+}
+
+.main-nav__link {
+  @include text-style-base(18px, 700, 32px, $color-text-light);
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-brand;
+  }
+
+  &:active {
+    color: rgba($color-brand, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-style-base(18px, 400, 18px, $color-text-light);
+    text-transform: none;
+
+    &:hover,
+    &:focus {
+      color: $color-brand;
+    }
+
+    &:active {
+      color: rgba($color-text-light, 0.3);
+    }
+
+    &--current {
+      position: relative;
+      pointer-events: none;
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -11px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-text-light;
+      }
+    }
+
+    &--last {
+      padding-right: 0;
+    }
+  }
+}

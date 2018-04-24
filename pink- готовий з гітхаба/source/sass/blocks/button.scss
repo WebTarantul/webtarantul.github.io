@@ -1,0 +1,72 @@
+.button {
+  @include text-style-base(18px, 700, 18px, $color-text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 280px;
+  min-height: 55px;
+  border: 3px solid $color-text-light;
+  border-radius: 40px;
+  font-family: $font-base;
+  text-align: center;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $color-brand;
+    background-color: $color-background-light;
+  }
+
+  &:active {
+    color: rgba($color-brand, 0.3);
+  }
+}
+
+.button__retouch {
+  color: #dddfe0;
+  border-color: #dddfe0;
+
+  &:hover,
+  &:focus {
+    color: #b5b9be;
+    background-color: transparent;
+    border-color: #b5b9be;
+  }
+
+  &:active {
+    color: #cdd0d3;
+    background-color: #b5b9be;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-left: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 184px;
+    margin: 0;
+  }
+
+  &--active {
+    color: $color-brand;
+    border-color: $color-brand;
+    margin-bottom: 12px;
+
+    &:hover,
+    &:focus {
+      color: $color-text-light;
+      background-color: $color-brand;
+      border-color: $color-brand;
+    }
+
+    &:active {
+      color: rgba($color-text-light, 0.3);
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+}

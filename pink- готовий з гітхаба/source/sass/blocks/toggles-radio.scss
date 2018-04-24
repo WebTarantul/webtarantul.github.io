@@ -1,0 +1,36 @@
+.toggles-radio {
+  display: flex;
+  margin-right: -13px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.toggles-radio__item {
+  margin-right: 13px;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border: 3px solid $color-background-light;
+  box-sizing: content-box;
+
+  &--active {
+    background-color: transparent;
+    border: 3px solid $color-secondary;
+  }
+
+  &--dark {
+    border: 3px solid $color-background-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}

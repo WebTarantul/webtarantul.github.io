@@ -1,0 +1,27 @@
+// Colors
+
+$color-brand:                #d22856;
+$color-secondary:            #283645;
+$color-text-base:            $color-secondary;
+$color-text-light:           #ffffff;
+$color-black:                #000000;
+$color-grey:                 #e5e5e5;
+$color-black-opacity:        rgba($color-black, 0.3);
+$color-background-light:     $color-text-light;
+$color-background-dark:      #f2f2f2;
+$color-inactive:             #e9ebec;
+$color-btn-form:             #2aab6d;
+
+// Fonts
+
+$font-base:   "Open Sans", arial, sans-serif;
+
+// media sizes
+
+$tablet-width: 660px;
+$desktop-width: 960px;
+
+// picture sizes
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

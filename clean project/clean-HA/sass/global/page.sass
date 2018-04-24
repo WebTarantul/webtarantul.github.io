@@ -1,0 +1,45 @@
+html
+  box-sizing: border-box
+
+
+*, *:before, *:after
+  box-sizing: inherit
+
+
+body
+  margin: 0
+  padding: 0
+  font-family: $font
+  font-size: $font-size
+  line-height: $line-height
+  color: $dark-blue
+  background-color: #fff
+  position: relative
+
+
+img
+  max-width: 100%
+  height: auto
+a
+  color: $accent
+  text-decoration: none
+  font-weight: 300
+  &:hover
+    color: $dark-blue
+    text-decoration: underline
+  &:active
+    opacity: 0.3
+
+.container
+  width: 320px
+  padding: 0 20px
+  margin: 0 auto
+  @media (min-width: $tablets)
+    width: 660px
+  @media (min-width: $desktops)
+    width: 960px
+
+.visually-hidden
+  @include visually-hidden()
+
+
