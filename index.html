@@ -1,36 +1,685 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./main/css/style.css">
-  <title>Порфолио</title>
+	<meta charset="utf-8" />
+	<title>WebTarantul/Frontend developer</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="./portfolio/libs/bootstrap/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="./portfolio/libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="./portfolio/libs/linea/styles.css" />
+	<link rel="stylesheet" href="./portfolio/libs/magnific-popup/magnific-popup.css" />
+	<link rel="stylesheet" href="./portfolio/libs/animate/animate.min.css" />
+	<link rel="stylesheet" href="./portfolio/css/fonts.css" />
+	<link rel="stylesheet" href="./portfolio/css/main.css" />
+	<link rel="stylesheet" href="./portfolio/css/skins/purple.css" />
+	<link rel="stylesheet" href="./portfolio/css/media.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 
 <body>
-  <header class="header">
-    <h1 class="header__title"> Мое временное портфолио </h1>
-  </header>
-  <main class="main">
-    <ul class="projects__list">
-      <li class="projects__item"><a target="_blank" href="https://webtarantul.github.io/star-db/"
-          class="projects__link">Star DB (React.js)</a></li>
-      <li class="projects__item"><a target="_blank" href="https://webtarantul.github.io/re-store/"
-          class="projects__link">React store (React.js, Redux.js)</a></li>
-      <li class="projects__item"><a target="_blank" href="https://webtarantul.github.io/keksobooking/"
-          class="projects__link">Keksobooking (JavaScript)</a></li>
-      <li class="projects__item"><a target="_blank" href="https://webtarantul.github.io/pink/" class="projects__link">Pink (адаптивная
-          верстка)</a></li>
-      <li class="projects__item"><a target="_blank" href="https://webtarantul.github.io/decormetal.net.ua_WM/app/"
-          class="projects__link">Лендинг пейдж(дизайн, адаптивная верстка)</a></li>
-      <li class="projects__item"><a target="_blank" href="https://webtarantul.github.io/WordPress-LP-WebDesignMaster/work-project/"
-          class="projects__link">Сайт портфолио(верстка)</a></li>
-      <li class="projects__item"><a target="_blank" href="https://webtarantul.github.io/SPA"
-          class="projects__link">Тестовое задание(SPA)</a></li>
-    </ul>
-  </main>
+	<div class="loader">
+		<div class="loader-inner"></div>
+	</div>
+	<header class="main-header main-color__bg" data-position="top center" data-parallax="scroll"
+		data-image-src="./portfolio/img/background.jpg" data-z-index="1">
+		<div class="container">
+			<div class="row">
+				<div class="column-md-12 top-head">
+					<div class="logo-container">
+						<svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+							xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<g>
+									<g>
+										<g>
+											<g>
+												<g>
+													<g>
+														<g>
+															<g>
+																<circle cx="256" cy="256" fill="#bfe1ff" r="256" style="
+    fill: #b18f5c;
+"></circle>
+															</g>
+														</g>
+													</g>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+								<path
+									d="m512 256c0-18.88-2.044-37.283-5.923-55l-101.545-101.545-8.988 101.866-100.139-100.138-16.374 139.836-141.563-141.564-30 100.777 63.551 63.551h-62.919l-65.684 56.54 82.271 82.271-.599 37.114 62.875 62.875c21.963 6.136 45.117 9.417 69.037 9.417 141.385 0 256-114.615 256-256z"
+									fill="#87c7ff" style="
+    fill: #98682d;
+"></path>
+								<g>
+									<path d="m65.688 339.256-23.272-18.933 51.416-63.199h115.622v30h-101.354z" fill="#636978"></path>
+								</g>
+								<g>
+									<path d="m124.089 439.708-28.754-75.478 94.005-36.686 10.907 27.948-66.284 25.866 18.16 47.671z"
+										fill="#636978"></path>
+								</g>
+								<g>
+									<path d="m211.892 222.294-104.424-22.062v-100.777h30v76.453l80.625 17.034z" fill="#636978"></path>
+								</g>
+								<g>
+									<path d="m446.313 339.256-42.413-52.132h-101.354v-30h115.622l51.416 63.199z" fill="#414952"></path>
+								</g>
+								<g>
+									<path d="m387.912 439.708-28.035-10.679 18.159-47.671-66.283-25.866 10.906-27.948 94.006 36.686z"
+										fill="#414952"></path>
+								</g>
+								<g>
+									<path d="m300.108 222.294-6.201-29.352 80.625-17.034v-76.453h30v100.777z" fill="#414952"></path>
+								</g>
+								<g>
+									<path
+										d="m356.995 311.319c0 82.048-45.217 123.049-100.995 123.049s-100.995-41.001-100.995-123.049 45.217-174.072 100.995-174.072 100.995 92.025 100.995 174.072z"
+										fill="#555a66"></path>
+								</g>
+								<g>
+									<path
+										d="m356.995 311.319c0-81.989-45.152-173.937-100.875-174.069v297.117c55.723-.059 100.875-41.059 100.875-123.048z"
+										fill="#333940"></path>
+								</g>
+								<g>
+									<ellipse cx="256" cy="148.975" fill="#fe8205" rx="61.086" ry="62.552"></ellipse>
+								</g>
+								<g>
+									<path
+										d="m317.086 148.975c0-34.505-27.284-62.482-60.965-62.549v125.098c33.681-.067 60.965-28.044 60.965-62.549z"
+										fill="#fa5d0f"></path>
+								</g>
+								<g>
+									<ellipse cx="256" cy="127.962" fill="#555a66" rx="57.553" ry="41.538"></ellipse>
+								</g>
+								<g>
+									<path
+										d="m313.553 127.962c-8.418-24.173-30.948-41.483-57.433-41.536v83.072c26.486-.053 49.015-17.363 57.433-41.536z"
+										fill="#333940"></path>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="toggle-menu">
+						<div class="sandwich">
+							<div class="sw-topper"></div>
+							<div class="sw-bottom"></div>
+							<div class="sw-footer"></div>
+						</div>
+					</div>
+					<nav class="top-menu">
+						<ul>
+							<li><a class="menu-item" href="#about">Обо мне</a></li>
+							<!-- <li><a class="menu-item" href="#resume">Резюме</a></li> -->
+							<li><a class="menu-item" href="#portfolio">Портфолио</a></li>
+							<li><a class="menu-item" href="#contacts">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="top-wraper">
+			<div class="top-dscr">
+				<div class="top-cenered">
+					<div class="top-text">
+						<h1 class="top-name"> Тарас Капуста </h1>
+						<p>Front-End разработчик (React.js, ReactNative.js, Mobx-state-tree, Redux)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="about" class="s-about bg__light">
+		<div class="section-header">
+			<h2 class="s-name">Обо мне</h2>
+			<div class="s-descr-wraper">
+				<p class="s-descr">Познакомимся поближе</p>
+			</div>
+		</div>
+		<div class="s-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-pull-4 animation-left">
+						<h3>Немного о себе</h3>
+						<p>Люблю качество и стараюсь, чтобы мой код был таким же. Честно и ответственно отношусь к заданиям. Люблю
+							то, чем занимаюсь. </p>
+						<p>Профессиональная WEB разработка: SPA(JavaScript, React, mobx-state-tree). Качественная семантическая и
+							адаптивная верстка, компонентный подход</p>
+						<ul class="stack-list">
+							<h3>Стек з каторым работаю:</h3>
+							<li class="stack-list__item">React.js</li>
+							<li class="stack-list__item">ReactNative.js</li>
+							<li class="stack-list__item">JavaScript(ES6)</li>
+							<li class="stack-list__item">Mobx-state-tree</li>
+							<li class="stack-list__item">Redux(есть представление)</li>
+							<li class="stack-list__item">Git</li>
+							<li class="stack-list__item">HTML</li>
+							<li class="stack-list__item">CSS(Sass, Less)</li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-md-push-4 animation-center">
+						<h3>Фото</h3>
+						<div class="person">
+							<a class="popup" href="img/my-photo_.jpg"><img src="./portfolio/img/my-photo_.jpg" width="200"
+									height="auto" alt=""></a>
+						</div>
+					</div>
+					<div class="col-md-4 animation-right person-last-block">
+						<h3>Персональная информация</h3>
+						<h2 class="person-header">Тарас Капуста</h2>
+						<ul>
+							<li><b>День рождения</b> 15 июня 1990года</li>
+							<li><b>Номер телефона</b> <a href="tel:+380680962010">+38 068 096 2010</a></li>
+							<li><b>E-mail:</b> <a href="mailto:tarstar1990@gmail.com">tarstar1990@gmail.com</a></li>
+						</ul>
+						<div class="social-wrap">
+							<ul>
+								<h5>Соц. сети:</h5>
+								<li><a href="https://www.linkedin.com/in/webtarantul/" target="_blank"><i
+											class="fa fa-linkedin-square"></i></i></a></li>
+								<li><a href="https://github.com/WebTarantul" target="_blank"><i class="fa fa-github"
+											aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com/kapustataras/" target="_blank"><i
+											class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section id="resume" class="s-resume">
+		<div class="section-header">
+			<h2 class="s-name">Резюме</h2>
+			<div class="s-descr-wraper">
+				<p class="s-descr">Мои знания и достижения</p>
+			</div>
+		</div>
+		<div class="s-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 left">
+						<h3>Работа</h3>
+						<div class="resume-icon"><i class="icon-basic-case"></i></div>
+						<div class="resume-item">
+							<div class="year">2008-2017</div>
+							<div class="resume-descr">ПП "Пронькина забава" <b>Програмист</b></div>
+							<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+								стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+								создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+						</div>
+						<div class="resume-item">
+							<div class="year">2008-2017</div>
+							<div class="resume-descr">ПП "Пронькина забава" <b>Програмист</b></div>
+							<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+								стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+								создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+						</div>
+						<div class="resume-item">
+							<div class="year">2008-2017</div>
+							<div class="resume-descr">ПП "Пронькина забава" <b>Програмист</b></div>
+							<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+								стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+								создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+						</div>
+					</div>
+					<div class="col-md-6 right">
+						<h3>Учеба</h3>
+						<div class="resume-icon"><i class="icon-basic-book-pen"></i></div>
+						<div class="resume-item">
+							<div class="year">2008-2017</div>
+							<div class="resume-descr"><b>Програмист</b>ПП "Пронькина забава"</div>
+							<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+								стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+								создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+						</div>
+						<div class="resume-item">
+							<div class="year">2008-2017</div>
+							<div class="resume-descr"><b>Програмист</b>ПП "Пронькина забава"</div>
+							<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+								стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+								создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+						</div>
+						<div class="resume-item">
+							<div class="year">2008-2017</div>
+							<div class="resume-descr"><b>Програмист</b>ПП "Пронькина забава"</div>
+							<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+								стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+								создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<section id="portfolio" class="s-portfolio bg__dark">
+		<div class="section-header">
+			<h2 class="s-name">Портфолио</h2>
+			<div class="s-descr-wraper">
+				<p class="s-descr">Мои последние работы</p>
+			</div>
+		</div>
+		<div class="s-content">
+			<div class="container">
+				<div class="row">
+					<div class="filter_div controls">
+						<ul class="portfolio-nav">
+							<li class="filter active" data-filter="all">Все работы</li>
+							<li class="filter" data-filter=".category-1">React.js</li>
+							<li class="filter" data-filter=".category-2">JavaScript</li>
+							<li class="filter" data-filter=".category-3">Верстка (HTML, CSS)</li>
+						</ul>
+					</div>
+					<div class="row" id="portfolio_grid">
+						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio-item category-1">
+							<img src="./portfolio/img/portfolio-images/mp.png" alt="alt">
+							<div class="portfolio-item__modal">
+								<h1>Marketplace</h1>
+								<p>Marketplace Apiko (SPA with React.js, mobx-state-tree)</p>
+								<a class="porfolio-item__descr-open" type="inline">Посмортеть</a>
+							</div>
+							<div class="hidden">
+								<div class="porfolio-item__descr">
+									<h3>Marketplace Apiko</h3>
+									<a class="link-to-project" href="https://marketplace-wt.herokuapp.com" target="_blank">Перейти</a>
+									<ol>
+										<li>Возможность войти на сайт <ul class="inner-list">
+												<li>Форма / страница авторизации (логина)</li>
+												<li>Обработка ошибок, к пр. неверные данные входа.</li>
+												<li>Валидация данных, инпут.</li>
+												<li>После ввода верных данных, пользователь попадает на главную страницу.</li>
+												<li>В хедере сайта отображается аватарка и дропдаун для выхода.</li>
+											</ul>
+										</li>
+										<li>Возможность зарегистрироваться на сайте. <ul class="inner-list">
+												<li>Форма / страница регистрации</li>
+												<li>Обработка ошибок</li>
+												<li>Валидация данных, инпут</li>
+												<li>После регистрации пользователь попадает на главную страницу.</li>
+											</ul>
+										</li>
+										<li>Отображение продуктов на домашней странице <ul class="inner-list">
+												<li>Отображается список продуктов</li>
+												<li>Каждый продукт обладает кнопкой "Добавить в избранное (сердечко)". По клику, ид продукта
+													добавляется в список избранных. Список избранных фетчиться с помощью запроса на сервер с
+													перечнем ид продуктов (массивом). Незарегистрированный пользователь также имеет возможность
+													добавлять в избранное.</li>
+												<li>После нажатия на эту кнопку, продукт добавиться в избранное, или удалиться с избранного,
+													если уже добавлен.</li>
+												<li>Хедер сайта содержит кнопку "Sell", которая перенаправляет на модалку добавления</li>
+												<li>Лого сайта, по клику на который пользователь попадает на главную страницу</li>
+												<li>По клику на продукт пользователь переходит на страницу продукта</li>
+											</ul>
+										</li>
+										<li>Страница с продуктом содержит картинку, информацию о продукте, локацию, цену, блок с информацией
+											о пользователе, который его продает. По кнопке "чат с продавцом" откроется модалка с возможностью
+											написать продавцу.</li>
+										<li>Если пользователь не вошел на сайт, его не должно пускает на рауты, которые работают только для
+											зарегистрированного пользователя (protected route), пользователь попадает на страницу логина
+											(например, inbox).</li>
+										<li>Если пользователь вошел, его не пустит на страницу логина.</li>
+										<li>Пользователь имеет возможность просматривать все чаты и отправлять сообщения в конкретный.
+											Получать новые сообщения в реальном времени.</li>
+										<li>Добавление продукта. Открывается в отдельной модалке. При перезагрузке страницы показывается как
+											отдельный раут `products / new`. Поля title, location являются обязательными (кнопка должна
+											задисейблена, когда они пустые или содержат только пробелы). Дополнительные поля: description
+											(textarea), price и photos.</li>
+										<li>Сабмит формы добавления направит пользователя на страницу продукта.</li>
+										<li>По клику на chat with seller не авторизированный пользователь должен перейдет на страницу
+											логина, после логина назад на страницу с продуктом и модалкой чтобы написать продавцу.</li>
+										<li>Пользователь имеет возможность пересмотреть свои продукты и продукты других пользователей.</li>
+										<li>На список своих продуктов можно попасть через Profile ссылке в дропдауни пользователя в хедере.
+										</li>
+									</ol>
+									<p>
+									</p>
+									<a class="link-to-project" href="https://marketplace-wt.herokuapp.com" target="_blank">Перейти</a>
+									<a href="https://marketplace-wt.herokuapp.com" target="_blank"><img
+											src="./portfolio/img/portfolio-images/mp.png" alt="alt"></a>
+								</div>
+							</div>
+						</div>
+						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio-item category-1">
+							<img src="./portfolio/img/portfolio-images/starDB.png" alt="alt">
+							<div class="portfolio-item__modal">
+								<h1>Star DB (SPA)</h1>
+								<p>Сайт с информацией о космических кораблях,песрсонажах и звездных кораблях с фильма "Звездные войны"
+								</p>
+								<a class="porfolio-item__descr-open" type="inline">Посмортеть</a>
+							</div>
+							<div class="hidden">
+								<div class="porfolio-item__descr">
+									<h3>Star DB (SPA)</h3>
+									<ul>
+										<li>Компонентный подход</li>
+										<li>Используются данные из открытого API - SWAPi.co.</li>
+										<li>Сделана обработка ошибок</li>
+										<li>Реализован роутинг</li>
+									</ul>
+									<a class="link-to-project" href="https://webtarantul.github.io/star-db/" target="_blank">Перейти</a>
+									<a href="https://webtarantul.github.io/star-db/" target="_blank"><img
+											src="./portfolio/img/portfolio-images/starDB.png" alt="alt"></a>
+								</div>
+							</div>
+						</div>
+						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio-item category-1">
+							<img src="./portfolio/img/portfolio-images/reStore.png" alt="alt">
+							<div class="portfolio-item__modal">
+								<h1>RE Store(React.js, Redux.js)</h1>
+								<p>Mini store with React.js, Redux.js</p>
+								<a href="https://webtarantul.github.io/re-store/" target="_blank" type="inline">Посмортеть</a>
+							</div>
+						</div>
+						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio-item category-1">
+							<img src="./portfolio/img/portfolio-images/todo.png" alt="alt">
+							<div class="portfolio-item__modal">
+								<h1>Todo List</h1>
+								<p>Mini aplication Todo List</p>
+								<a href="https://todo-list-webtarantul.herokuapp.com/" type="inline" target="_blank">Посмортеть</a>
+							</div>
+						</div>
+						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio-item category-2">
+							<img src="./portfolio/img/portfolio-images/keksobooking.png" alt="alt">
+							<div class="portfolio-item__modal">
+								<h1>Keksobooking (JavaScript ES5)</h1>
+								<p>Кексобукинг — сервис размещения объявлений о сдаче в аренду недвижимости в центре Токио</p>
+								<a class="porfolio-item__descr-open" type="inline">Посмортеть</a>
+							</div>
+							<div class="hidden">
+								<div class="porfolio-item__descr">
+									<h3>Keksobooking (JavaScript ES5)</h3>
+									<a class="link-to-project" href="https://webtarantul.github.io/keksobooking/"
+										target="_blank">Перейти</a>
+									<p class="porfolio-item__teh"> <b>Тех. задание:</b> </p> Состояния страницы <p> Неактивное состояние.
+										При первом открытии, страница находится в неактивном состоянии: блок с картой находится в неактивном
+										состоянии, форма подачи заявления заблокирована. </p>
+									<ul>
+										<li>Блок с картой .map содержит класс map--faded;</li>
+										<li>Форма заполнения информации об объявлении .ad-form содержит класс ad-form--disabled;</li>
+										<li>Поля формы .ad-form заблокированы с помощью атрибута disabled, добавленного на них или на их
+											родительские блоки fieldset.</li>
+									</ul>
+									<p> Единственное доступное действие в неактивном состоянии — перетаскивание метки .map__pin--main,
+										являющейся контролом указания адреса объявления. Первое перемещение метки переводит страницу в
+										активное состояние. </p>
+									<p> Активное состояние. В активном состоянии страница позволяет вносить изменения в форму и отправлять
+										её на сервер, просматривать похожие объявления на карте, фильтровать их и уточнять подробную
+										информацию о них, показывая для каждого из объявлений карточку. </p> 1. Заполнение информации <ul>
+										<li>Заполнение информации и отправка данных: <ul>
+												<li>заголовок;</li>
+												<li>адрес;</li>
+												<li>вид недвижимости;</li>
+												<li>количество комнат;</li>
+												<li>количество спальных мест;</li>
+												<li>время заезда и выезда из квартиры.</li>
+												<li>дополнительные параметры: <ul>
+														<li>парковка;</li>
+														<li>Wi-Fi;</li>
+														<li>кондиционер;</li>
+														<li>кухня;</li>
+														<li>стиральная машина;</li>
+														<li>лифт;</li>
+													</ul>
+												</li>
+												<li>фотографии</li>
+												<li>свободное текстовое описание</li>
+											</ul>
+										</li>
+										<li>Заполнение всей информации производится на одной странице без промежуточных переходов. Порядок
+											заполнения информации не важен.</li>
+										<li>После заполнения всех данных, при нажатии на кнопку «Опубликовать», все данные из формы, включая
+											изображения, с помощью AJAX-запроса отправляются на сервер https://js.dump.academy/keksobooking
+											методом POST с типом multipart/form-data.</li>
+										<li>Страница реагирует на неправильно введённые значения в форму. Если данные, введённые в форму, не
+											соответствуют ограничениям, указанным в разделе, описывающем поля ввода, форму невозможно
+											отправить на сервер. При попытке отправить форму с неправильными данными, отправки не происходит,
+											а неверно заполненные поля подсвечиваются красной рамкой. Способ добавления рамки и её стиль
+											произвольные.</li>
+										<li>При успешной отправке формы, страница, не перезагружаясь, переходит в изначальное неактивное
+											состояние: все заполненные поля стираются, метки похожих объявлений и карточка активного
+											объявления удаляются, метка адреса возвращается в исходное положение, значение поля адреса
+											корректируется соответственно положению метки. Показывается сообщение об успешной отправке формы:
+											у блока .success нужно убрать класс hidden. Нажатие на кнопку Esc или клик по произвольной области
+											страницы скрывает блок .success, добавляя ему класс hidden.</li>
+										<li>Если при отправке данных произошла ошибка запроса, показывается соответствующее сообщение. Стиль
+											и содержимое сообщения произвольные. Должна быть предусмотрена возможность закрыть сообщение или
+											же оно само должно исчезать через некоторое время.</li>
+										<li>Нажатие на кнопку .ad-form__reset сбрасывает страницу в исходное неактивное состояние без
+											перезагрузки: все заполненные поля стираются, метки похожих объявлений и карточка активного
+											объявления удаляются, метка адреса возвращается в исходное положение, значение поля адреса
+											корректируется соответственно положению метки.</li>
+									</ul> 2. Ограничения, накладываемые на поля ввода <ul>
+										<li>Заголовок объявления: <ul>
+												<li>Обязательное текстовое поле;</li>
+												<li>Минимальная длина — 30 символов;</li>
+												<li>Максимальная длина — 100 символов;</li>
+											</ul>
+										</li>
+										<li>Цена за ночь: <ul>
+												<li>Обязательное поле;</li>
+												<li>Числовое поле;</li>
+												<li>Максимальное значение — 1 000 000;</li>
+											</ul>
+										</li>
+										<li>Поле «Тип жилья» влияет на минимальное значение поля «Цена за ночь»: <ul>
+												<li>«Бунгало» — минимальная цена за ночь 0;</li>
+												<li>«Квартира» — минимальная цена за ночь 1 000;</li>
+												<li>«Дом» — минимальная цена 5 000;</li>
+												<li>«Дворец» — минимальная цена 10 000;</li>
+											</ul>
+											<p> Вместе с минимальным значением цены нужно изменять и плейсхолдер. </p>
+										</li>
+										<li>Адрес: Ручное редактирование поля запрещено. Значение автоматически выставляется при перемещении
+											метки .map__pin--main по карте. Подробности заполнения поля адреса, описаны вместе с поведением
+											метки.</li>
+										<li>Поля «Время заезда» и «Время выезда» синхронизированы: при изменении значения одного поля, во
+											втором выделяется соответствующее ему. Например, если время заезда указано «после 14», то время
+											выезда будет равно «до 14» и наоборот.</li>
+										<li>Поле «Количество комнат» синхронизировано с полем «Количество мест» таким образом, что при
+											выборе количества комнат вводятся ограничения на допустимые варианты выбора количества гостей:
+											<ul>
+												<li>1 комната — «для 1 гостя»;</li>
+												<li>2 комнаты — «для 2 гостей» или «для 1 гостя»;</li>
+												<li>3 комнаты — «для 3 гостей», «для 2 гостей» или «для 1 гостя»;</li>
+												<li>100 комнат — «не для гостей»;</li>
+											</ul>
+											<p> Допускаются разные способы ограничения допустимых значений поля «Количество мест»: удаление из
+												разметки соответствующих элементов option, добавление элементам option состояния disabled или
+												другие способы ограничения, например, с помощью метода setCustomValidity. </p>
+										</li>
+									</ul> 3. Выбор адреса на карте: <ul>
+										<li>Приблизительный адрес квартиры указывается перетаскиванием специальной метки по карте Токио. При
+											перемещении изменяется значение соответствующего поля ввода. Содержимое поле адреса не может быть
+											пустым: сразу после загрузки страницы и после сброса формы, значение должно соответствовать
+											координатам метки.</li>
+										<li>Формат значения поля адреса: {{x}}, {{y}}, где {{x}} и {{y}} это координаты, на которые метка
+											указывает своим острым концом (середина нижнего края блока с меткой).</li>
+										<li>Обратите внимание на то, что координаты по X и Y, соответствующие адресу, должны высчитываться
+											не от левого верхнего угла блока с меткой, а от места, куда указывает метка своим острым концом.
+										</li>
+										<li>Чтобы метку невозможно было поставить выше горизонта или ниже панели фильтров, значение
+											координаты Y должно быть ограничено интервалом от 130 до 630. Значение координаты X должно быть
+											ограничено размерами блока, в котором перетаскивается метка. <p> <b>Например</b> Если метка
+												.map__pin--main имеет координаты 300×200, то в поле адрес должно быть записано значение 300,
+												200. </p>
+										</li>
+										<li>При сбросе формы, страница возвращается в исходное неактивное состояние и метка перемещается на
+											изначальные координаты. Соответствующее значение поля ввода адреса так же должно быть обновлено.
+										</li>
+									</ul> 4. Сравнение с похожими объявлениями <ul>
+										<li>Полный список похожих объявлений загружается после перехода страницы в активное состояние с
+											сервера https://js.dump.academy/keksobooking/data. Каждое из объявлений показывается на карте в
+											виде специальной метки: блока, имеющего класс map__pin. Шаблонный элемент для метки .map__pin
+											находится в шаблоне template. Разметка каждой из меток должна создаваться по аналогии с шаблонным
+											элементом.</li>
+										<li>При нажатии на метку похожего объявления, показывается карточка, содержащая подробную информацию
+											об объявлении. Разметка карточки должна создаваться на основе шаблонного элемента .map__card,
+											расположенного в элементе template. Данные в карточку вставляются по аналогии с данными,
+											вставленными в шаблонную карточку в качестве примера. В случае если данных для заполнения не
+											хватает, соответствующий блок в карточке скрывается. Например, если в объявлении не указано
+											никаких удобств, нужно скрыть блок .popup__features. Сразу после перехода в активный режим,
+											карточка не отображается, она показывается только после нажатия на одну из меток. При этом
+											активной метке добавляется класс .map__pin--active. Нажатие на метку .map__pin--main не приводит к
+											показу карточки.</li>
+										<li>В каждый момент времени может быть открыта только одна карточка, то есть нажатие метку другого
+											похожего объявления должно закрывать текущую карточку, если она открыта и показывать карточку,
+											соответствующую другому объявлению.</li>
+										<li>Открытую карточку с подробной информацией можно закрыть или нажатием на иконку крестика в правом
+											верхнем углу объявления или нажатием на клавишу Esc на клавиатуре.</li>
+										<li>Объекты, расположенные неподалёку, можно фильтровать. Фильтрация производится по тем же
+											параметрам, которые указываются для объявления: <ul>
+												<li>тип жилья;</li>
+												<li>цена за ночь;</li>
+												<li>число комнат;</li>
+												<li>число гостей;</li>
+												<li>дополнительные удобства;</li>
+											</ul>
+											<p> Фильтрация производится при изменении значений соответствующих полей формы .map__filters. </p>
+										</li>
+										<li>Как до изменения фильтров, так и при изменении фильтра, на карте должны показываться все
+											подходящие варианты, но не более пяти меток, независимо от выбранного фильтра.</li>
+										<li>Блок, с помощью которого производится фильтрация похожих объявлений на момент открытия страницы
+											заблокирован и становится доступным только после окончания загрузки всех похожих объявлений.</li>
+										<li>Отрисовка соответствующих, выставленных фильтрам элементов, должна происходить не чаще чем раз в
+											полсекунды (устранение дребезга).</li>
+										<li>При изменении фильтров, карточка, показывающая подробную информацию о похожем объявлении должна
+											быть скрыта.</li>
+									</ul> 5. Доступность и активные элементы: <ul>
+										<li>Взаимодействие со всеми активными элементами на странице должно быть доступно не только с
+											помощью курсора и кликов на них, но и с помощью клавиатуры: все активные элементы должны
+											фокусироваться и реагировать на нажатие клавиши Enter так же, как и на клик.</li>
+									</ul> 6. Необязательная функциональность <ul>
+										<li>В форме подачи объявления показывается аватарка пользователя и фотографии объявления при
+											изменении значений соответствующих полей.</li>
+									</ul>
+									<a class="link-to-project" href="https://webtarantul.github.io/keksobooking/"
+										target="_blank">Перейти</a>
+									<a href="https://webtarantul.github.io/keksobooking/" target="_blank"><img
+											src="./portfolio/img/portfolio-images/keksobooking.png" alt="alt"></a>
+								</div>
+							</div>
+						</div>
+						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio-item category-3">
+							<img src="./portfolio/img/portfolio-images/pink.png" alt="Pink">
+							<div class="portfolio-item__modal">
+								<h1>Pink</h1>
+								<p>Адаптивная верстка сайта приложения по обработке фото</p>
+								<a href="https://webtarantul.github.io/pink/" target="_blank" type="inline">Посмортеть</a>
+							</div>
+						</div>
+						<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio-item category-3">
+							<img src="./portfolio/img/portfolio-images/decorMetal.png" alt="decor metal">
+							<div class="portfolio-item__modal">
+								<h1>Deco Metal</h1>
+								<p>Лендинг компании по металообработке (лендинг под ключ)</p>
+								<a href="https://webtarantul.github.io/decormetal.net.ua_WM/app/" target="_blank"
+									type="inline">Посмортеть</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contacts" class="s-contacts bg__light">
+		<div class="section-header">
+			<h2 class="s-name">Контакты</h2>
+			<div class="s-descr-wraper">
+				<p class="s-descr">Оставьте Ваше сообщение</p>
+			</div>
+		</div>
+		<div class="s-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="contact-box">
+							<div class="icon-basic-geolocalize-05"></div>
+							<h3>Адрес:</h3>
+							<p>Лепкого 6а/5, Тернополь, Украина</p>
+						</div>
+						<div class="contact-box">
+							<div class="icon-basic-smartphone"></div>
+							<h3>Телефон:</h3>
+							<p><a href="tel:++380680962010">+38-068-0962010</a></p>
+							<h3>E-mail:</h3>
+							<p><a href="mailto:tarstar1990@gmail.com">tarstar1990@gmail.com</a></p>
+						</div>
+						<!-- <div class="contact-box">
+							<div class="icon-basic-webpage-img-txt"></div>
+							<h3>Веб-сайт:</h3>
+							<p><a href="webtarantul.com">WebTarantul.com</a></p>
+						</div> -->
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<form action="https://formspree.io/tarstar1990@gmail.com" method="POST" class="main_form" novalidate
+							target="_blank" method="post">
+							<label class="form-group">
+								<span class="color_element">*</span> Ваше имя: <input type="text" name="name" placeholder="Ваше имя"
+									data-validation-required-message="Вы не ввели имя" required />
+								<span class="help-block text-danger"></span>
+							</label>
+							<label class="form-group">
+								<span class="color_element">*</span> Ваш E-mail: <input type="email" name="email"
+									placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
+								<span class="help-block text-danger"></span>
+							</label>
+							<label class="form-group">
+								<span class="color_element">*</span> Ваше сообщение: <textarea name="message"
+									placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение"
+									required></textarea>
+								<span class="help-block text-danger"></span>
+							</label>
+							<button type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="main-footer bg__dark">
+		<div class="container">
+			<div class="col-md-12 ft-wrap">
+				<p class="copy">&copy 2020 Тарас Капуста</p>
+				<div class="social-wrap">
+					<ul>
+						<li><a href="https://www.linkedin.com/in/webtarantul/" target="_blank"><i
+									class="fa fa-linkedin-square"></i></i></a></li>
+						<li><a href="https://github.com/WebTarantul" target="_blank"><i class="fa fa-github"
+									aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/kapustataras/" target="_blank"><i class="fa fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="hidden">
+	</div>
+	<!--[if lt IE 9]>
+	<script src="./portfolio/libs/html5shiv/es5-shim.min.js"></script>
+	<script src="./portfolio/libs/html5shiv/html5shiv.min.js"></script>
+	<script src="./portfolio/libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="./portfolio/libs/respond/respond.min.js"></script>
+<![endif]-->
+	<script src="./portfolio/libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="./portfolio/libs/parallax/parallax.min.js"></script>
+	<script src="./portfolio/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="./portfolio/libs/mixitup/mixitup.min.js"></script>
+	<script src="./portfolio/libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="./portfolio/libs/waypoints/waypoints.min.js"></script>
+	<script src="./portfolio/libs/animate/animate-css.js"></script>
+	<script src="./portfolio/libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+	<script src="./portfolio/js/common.js"></script>
+	<!-- Yandex.Metrika counter -->
+	<!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter -->
+	<!-- /Google Analytics counter -->
 </body>
 
 </html>

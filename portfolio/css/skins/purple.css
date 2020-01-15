@@ -1,0 +1,167 @@
+body {
+  color: #222 !important;
+  letter-spacing: 1px !important;
+}
+
+a {
+  color: #8238A7 !important;
+}
+
+p,
+footer.main-footer,
+.s-about li {
+  color: #888 !important;
+}
+
+.color_element {
+  color: #8238A7 !important;
+}
+
+.color_bg {
+  background-color: #8238A7 !important;
+}
+
+.color_border {
+  border-color: #8238A7 !important;
+}
+
+.main-color__bg {
+  background-color: #222 !important;
+}
+
+.toggle-menu {
+  background-color: rgba(34, 34, 34, 0.5) !important;
+}
+
+.top-menu a:hover !important {
+  color: #8238A7 !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  transition: background 0.7s !important;
+}
+
+.top-menu a {
+  letter-spacing: 4px !important;
+}
+
+.top-text p {
+  color: #FAFAFA !important;
+  letter-spacing: 4px !important;
+}
+
+[class^="s-"] .s-descr {
+  color: #000 !important;
+}
+
+[class^="s-"] h3 {
+  letter-spacing: 3px !important;
+  color: #888 !important;
+}
+
+.bg__light {
+  background-color: #FAFAFA !important;
+}
+
+.bg__dark {
+  background-color: #222 !important;
+  color: #fff !important;
+}
+
+.bg__dark a {
+  color: #fff !important;
+}
+
+.bg__dark .s-descr {
+  color: #fff !important;
+}
+
+.bg__dark .s-descr::after !important {
+  background-color: #fff !important;
+}
+
+.s-descr {
+  letter-spacing: 5px !important;
+}
+
+.s-descr:after !important {
+  background-color: #222 !important;
+}
+
+.main-footer {
+  letter-spacing: 0px !important;
+}
+
+.s-about p:nth-child(even) !important {
+  color: #8238A7 !important;
+}
+
+.person-header {
+  letter-spacing: 2px !important;
+}
+
+.s-resume h3 {
+  letter-spacing: 1px !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #222 !important;
+}
+
+.resume-item .year {
+  background-color: #8238A7 !important;
+  color: #fff !important;
+  letter-spacing: 3px !important;
+}
+
+.portfolio-nav li {
+  color: #888 !important;
+  letter-spacing: 2px !important;
+}
+
+.portfolio-nav li.active {
+  color: #fff !important;
+  border-bottom: 1px solid #8238A7 !important;
+}
+
+.portfolio-item__modal a {
+  border-color: #8238A7 !important;
+  color: #8238A7 !important;
+}
+
+.porfolio-item__descr {
+  border-color: #8238A7 !important;
+}
+
+.ft-wrap .social-wrap a {
+  color: #8238A7 !important;
+}
+
+[class^="icon-"] {
+  color: #8238A7 !important;
+}
+
+form input,
+form textarea {
+  letter-spacing: 2px !important;
+}
+
+form input:focus !important,
+form textarea:focus !important {
+  border: 1px solid #8238A7 !important;
+}
+
+form button {
+  background-color: #8238A7 !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+}
+
+form .form-group {
+  letter-spacing: 2px !important;
+  color: #888 !important;
+}
+
+form .form-group .text-danger {
+  color: #8238A7 !important;
+  font-weight: 400 !important;
+}
+
+/*# sourceMappingURL=purple.css.map */
