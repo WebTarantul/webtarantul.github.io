@@ -603,3 +603,12 @@ li.stack-list__item {
   padding: 10px;
   font-weight: 600;
 }
+
+.links-to-project {
+  display: flex;
+  justify-content: center;
+}
+
+.links-to-project a:last-child {
+  color: #817786 !important;
+}
